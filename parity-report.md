@@ -5,7 +5,7 @@ Result: PASS. 406 fixtures, 406 compared: 406 identical, 0 logged exceptions, 0 
 ## Method
 
 - Workspace: `/Users/John/cJSON-live-demo/cJSON-live-demo`
-- Tree hash: `0e8d373f31f6bb1cf9bfb4b682c7bed068ebe3a0c6906b77646e7d2734167b1f`
+- Tree hash: `cf8f0c31191d0af7dc033f51d80687e391449abf4c38d4c3041150e149b47089`
 - Build: `make oracle rust-driver` (exit 0)
 - C oracle: `./build/oracle {input}`
 - Rust port: `./target/release/rust-driver {input}`
