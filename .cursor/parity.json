@@ -1,0 +1,21 @@
+{
+  "$comment": "Parity gate for the cJSON C-to-Rust port. c_cmd runs tools/cjson-oracle.c compiled against the unmodified cJSON.c; rust_cmd runs tools/rust-driver over cjson-core. Both print the report described in tools/DRIVER_FORMAT.md. `make parity` additionally runs the same oracle source linked against the Rust cjson-ffi library.",
+  "build": ["make", "oracle", "rust-driver"],
+  "c_cmd": ["./build/oracle", "{input}"],
+  "rust_cmd": ["./target/release/rust-driver", "{input}"],
+  "input_mode": "arg",
+  "fixtures": [
+    "tests/inputs/*",
+    "fuzzing/inputs/*",
+    "tests/json-patch-tests/*.json",
+    "tests/parity/**/*"
+  ],
+  "oracle_sources": ["*.c", "*.h"],
+  "exceptions_file": "PARITY_EXCEPTIONS.md",
+  "exceptions_rs": ["*-core/tests/exceptions.rs"],
+  "exceptions_test": ["cargo", "test", "-p", "cjson-core", "--test", "exceptions"],
+  "per_run_timeout_s": 10,
+  "build_timeout_s": 600,
+  "compare_stderr": false,
+  "hash_exclude": ["build/**"]
+}

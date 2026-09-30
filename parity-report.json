@@ -1,0 +1,3286 @@
+{
+  "result": "PASS",
+  "summary": "406 fixtures, 406 compared: 406 identical, 0 logged exceptions, 0 diverged; 0 gate problems.",
+  "tree_hash": "cf8f0c31191d0af7dc033f51d80687e391449abf4c38d4c3041150e149b47089",
+  "method": {
+    "build": "`make oracle rust-driver` (exit 0)",
+    "c_cmd": "`./build/oracle {input}`",
+    "rust_cmd": "`./target/release/rust-driver {input}`",
+    "input": "fixture path substituted for `{input}`",
+    "compared": "stdout bytes and exit status (stderr not compared)",
+    "fixtures": "`tests/inputs/*`, `fuzzing/inputs/*`, `tests/json-patch-tests/*.json`, `tests/parity/**/*` (406 files)",
+    "exceptions_file": "`PARITY_EXCEPTIONS.md`",
+    "exceptions_test": "not run (no exception rows)"
+  },
+  "reproduce": "printf '%s' '{\"status\": \"completed\", \"loop_count\": 0, \"workspace_roots\": [\"/Users/John/cJSON-live-demo/cJSON-live-demo\"]}' | '/Users/John/.cursor/hooks/c-rust-parity/parity_gate.py' --force",
+  "counts": {
+    "fixtures": 406,
+    "compared": 406,
+    "identical": 406,
+    "exceptions": 0,
+    "diverged": 0,
+    "problems": 0
+  },
+  "fixtures": [
+    {
+      "fixture": "fuzzing/inputs/test1",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c60cf049eeed2436a7322e4d3990171a65b8c0989f538ae73f01f97e7c0c13e9",
+      "rust_stdout_sha256": "c60cf049eeed2436a7322e4d3990171a65b8c0989f538ae73f01f97e7c0c13e9"
+    },
+    {
+      "fixture": "fuzzing/inputs/test10",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ed67fc1770c36fe2852b16bd86a458047c2370a84a09740842404924f7eba5b7",
+      "rust_stdout_sha256": "ed67fc1770c36fe2852b16bd86a458047c2370a84a09740842404924f7eba5b7"
+    },
+    {
+      "fixture": "fuzzing/inputs/test11",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2ccbe75076f5cf651ecd8347450d54934dc54cbe9e4d72f17f6deda250db8862",
+      "rust_stdout_sha256": "2ccbe75076f5cf651ecd8347450d54934dc54cbe9e4d72f17f6deda250db8862"
+    },
+    {
+      "fixture": "fuzzing/inputs/test2",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8b4015f05e469c1e72a32ee1b8eb0f235f31bad2b699f12265564fd3325325ba",
+      "rust_stdout_sha256": "8b4015f05e469c1e72a32ee1b8eb0f235f31bad2b699f12265564fd3325325ba"
+    },
+    {
+      "fixture": "fuzzing/inputs/test3",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d331c56000df2b3639c51e7e5544dbec7c9c3ffa546f613e251b0137aec1adab",
+      "rust_stdout_sha256": "d331c56000df2b3639c51e7e5544dbec7c9c3ffa546f613e251b0137aec1adab"
+    },
+    {
+      "fixture": "fuzzing/inputs/test3.bu",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "fc499ce00cec34ca43e167bf0ae50d6c79d599563f6b30c9673e2b88c6b387ff",
+      "rust_stdout_sha256": "fc499ce00cec34ca43e167bf0ae50d6c79d599563f6b30c9673e2b88c6b387ff"
+    },
+    {
+      "fixture": "fuzzing/inputs/test3.uf",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c3d5807c79a5a537db669f37ff77bf667942a0d1d2f5b76eb84b49697e8d431c",
+      "rust_stdout_sha256": "c3d5807c79a5a537db669f37ff77bf667942a0d1d2f5b76eb84b49697e8d431c"
+    },
+    {
+      "fixture": "fuzzing/inputs/test3.uu",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "330f2824347f12f549fa22aa724acab2dc43c3ea68b947cab0636e8e4218c9e5",
+      "rust_stdout_sha256": "330f2824347f12f549fa22aa724acab2dc43c3ea68b947cab0636e8e4218c9e5"
+    },
+    {
+      "fixture": "fuzzing/inputs/test4",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c0db77cdaf4674cc51f11a4fb9ffd68882d1f977185eac79bf2f066c9f25e873",
+      "rust_stdout_sha256": "c0db77cdaf4674cc51f11a4fb9ffd68882d1f977185eac79bf2f066c9f25e873"
+    },
+    {
+      "fixture": "fuzzing/inputs/test5",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e13c63ae50b9d6b5ce145c838bf9453a7c6d8c87f68d425833533415cd68bcb1",
+      "rust_stdout_sha256": "e13c63ae50b9d6b5ce145c838bf9453a7c6d8c87f68d425833533415cd68bcb1"
+    },
+    {
+      "fixture": "fuzzing/inputs/test6",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "479b8ac411d944b9c8765c5ba9740d631943a7f86a3e9cad76a032406cba993a",
+      "rust_stdout_sha256": "479b8ac411d944b9c8765c5ba9740d631943a7f86a3e9cad76a032406cba993a"
+    },
+    {
+      "fixture": "fuzzing/inputs/test7",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "46e7e665ce7f179909fdbd47120c29e61d268c0793d9519fced1d5c8a5048f03",
+      "rust_stdout_sha256": "46e7e665ce7f179909fdbd47120c29e61d268c0793d9519fced1d5c8a5048f03"
+    },
+    {
+      "fixture": "fuzzing/inputs/test8",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "dcaad210223c63c012fff80de6683c5653b312bbddfdd78e6f0e2558c85f6f95",
+      "rust_stdout_sha256": "dcaad210223c63c012fff80de6683c5653b312bbddfdd78e6f0e2558c85f6f95"
+    },
+    {
+      "fixture": "fuzzing/inputs/test9",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ab03c82ec70f80f718435f89a1d7e3b3e9827ce3d8d746e3ad27c89d2b8137f5",
+      "rust_stdout_sha256": "ab03c82ec70f80f718435f89a1d7e3b3e9827ce3d8d746e3ad27c89d2b8137f5"
+    },
+    {
+      "fixture": "tests/inputs/test1",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f3939163b224681dd7432041d53fa30a2ea4d4de61a6fd9a095082fac74ad3fc",
+      "rust_stdout_sha256": "f3939163b224681dd7432041d53fa30a2ea4d4de61a6fd9a095082fac74ad3fc"
+    },
+    {
+      "fixture": "tests/inputs/test1.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0c41eefed1757c8fac8f56395c1eb89e22af96e9d1780b4941a5ba26176def98",
+      "rust_stdout_sha256": "0c41eefed1757c8fac8f56395c1eb89e22af96e9d1780b4941a5ba26176def98"
+    },
+    {
+      "fixture": "tests/inputs/test10",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ea293e7fe7bf27ef5bb6c47097a338ee729510751f3118187e926d357097ef00",
+      "rust_stdout_sha256": "ea293e7fe7bf27ef5bb6c47097a338ee729510751f3118187e926d357097ef00"
+    },
+    {
+      "fixture": "tests/inputs/test10.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "fa64a0ada803ffb61153f8300f61148283825dfd9ee4f7ebf29b5b8648d318f4",
+      "rust_stdout_sha256": "fa64a0ada803ffb61153f8300f61148283825dfd9ee4f7ebf29b5b8648d318f4"
+    },
+    {
+      "fixture": "tests/inputs/test11",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f15fdff11381cf84661056c3a248f9e3fd5fcf7c7d2285f75bfa45c573cc4d7b",
+      "rust_stdout_sha256": "f15fdff11381cf84661056c3a248f9e3fd5fcf7c7d2285f75bfa45c573cc4d7b"
+    },
+    {
+      "fixture": "tests/inputs/test11.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b084d85cbf96e8c23e493419c173c8b7f4956d49460145f3cfdddfbc96260cb2",
+      "rust_stdout_sha256": "b084d85cbf96e8c23e493419c173c8b7f4956d49460145f3cfdddfbc96260cb2"
+    },
+    {
+      "fixture": "tests/inputs/test2",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0165b5b4e50313f3a685cc14235fa95ea1da238dfd004c0d86046f3ec4d8accd",
+      "rust_stdout_sha256": "0165b5b4e50313f3a685cc14235fa95ea1da238dfd004c0d86046f3ec4d8accd"
+    },
+    {
+      "fixture": "tests/inputs/test2.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "97e00eacc4ecee5306b0ac50f677fb09a9f7f960457253d79f6c18f79568312f",
+      "rust_stdout_sha256": "97e00eacc4ecee5306b0ac50f677fb09a9f7f960457253d79f6c18f79568312f"
+    },
+    {
+      "fixture": "tests/inputs/test3",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "26e7dff3a7f979d69a19e28e901a7045f4b616286b13dffdbd2d6f77459dde32",
+      "rust_stdout_sha256": "26e7dff3a7f979d69a19e28e901a7045f4b616286b13dffdbd2d6f77459dde32"
+    },
+    {
+      "fixture": "tests/inputs/test3.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a3edb88f5d6dfe10691f235593411b9be7b1ec392f0e142ef5ee14ce8534c4d8",
+      "rust_stdout_sha256": "a3edb88f5d6dfe10691f235593411b9be7b1ec392f0e142ef5ee14ce8534c4d8"
+    },
+    {
+      "fixture": "tests/inputs/test4",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d9a6ba3b86cc4731e11e867f4daea7ae8ab3be6e50d5716bdb4fd7c2b3d1019b",
+      "rust_stdout_sha256": "d9a6ba3b86cc4731e11e867f4daea7ae8ab3be6e50d5716bdb4fd7c2b3d1019b"
+    },
+    {
+      "fixture": "tests/inputs/test4.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "80360cb384007faed699a157d89deefb3cdadd3035e54b154d5f9f7e7129eef6",
+      "rust_stdout_sha256": "80360cb384007faed699a157d89deefb3cdadd3035e54b154d5f9f7e7129eef6"
+    },
+    {
+      "fixture": "tests/inputs/test5",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "28cd1e5d14da8c0f1ea68e02ff315e4e97941ece64ecfa9fdde4b9b489578442",
+      "rust_stdout_sha256": "28cd1e5d14da8c0f1ea68e02ff315e4e97941ece64ecfa9fdde4b9b489578442"
+    },
+    {
+      "fixture": "tests/inputs/test5.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f20bf4a04f130eaa82a6869ccd998725711c04f3c263ca19782fee4f0309a23a",
+      "rust_stdout_sha256": "f20bf4a04f130eaa82a6869ccd998725711c04f3c263ca19782fee4f0309a23a"
+    },
+    {
+      "fixture": "tests/inputs/test6",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b77d88d5fe1fa9bfd0cf546a48e32e6fcc47ec73a93f62a954d4d68e4f70f766",
+      "rust_stdout_sha256": "b77d88d5fe1fa9bfd0cf546a48e32e6fcc47ec73a93f62a954d4d68e4f70f766"
+    },
+    {
+      "fixture": "tests/inputs/test7",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b196c8ed9e2022fab0820febf3639d548949e0390bf1d179bdbe7bf7f02acc77",
+      "rust_stdout_sha256": "b196c8ed9e2022fab0820febf3639d548949e0390bf1d179bdbe7bf7f02acc77"
+    },
+    {
+      "fixture": "tests/inputs/test7.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e7f4f56027d91e8ee260e19d40545cc21decdaa1fc2c358ebdfe096bc8778e30",
+      "rust_stdout_sha256": "e7f4f56027d91e8ee260e19d40545cc21decdaa1fc2c358ebdfe096bc8778e30"
+    },
+    {
+      "fixture": "tests/inputs/test8",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "107b4589bc34b648c157cb1ad4db8e9a1addef9a02399adf44a21e91b925897d",
+      "rust_stdout_sha256": "107b4589bc34b648c157cb1ad4db8e9a1addef9a02399adf44a21e91b925897d"
+    },
+    {
+      "fixture": "tests/inputs/test8.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d9332ee0839e5376d33c24bdb293189f629129d00a8ca5c4f11391d708972697",
+      "rust_stdout_sha256": "d9332ee0839e5376d33c24bdb293189f629129d00a8ca5c4f11391d708972697"
+    },
+    {
+      "fixture": "tests/inputs/test9",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "86e8772483ea4a2fa055521ad36c9de4e2896d16a91e338a9b82e3a5bf9b5f8f",
+      "rust_stdout_sha256": "86e8772483ea4a2fa055521ad36c9de4e2896d16a91e338a9b82e3a5bf9b5f8f"
+    },
+    {
+      "fixture": "tests/inputs/test9.expected",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f12831a167572d46c01bd5034fc49d7c106d287d67d5bd4407a521031d32f258",
+      "rust_stdout_sha256": "f12831a167572d46c01bd5034fc49d7c106d287d67d5bd4407a521031d32f258"
+    },
+    {
+      "fixture": "tests/json-patch-tests/cjson-utils-tests.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "169de5c8befe6ce46cc10b453856dfe85944cf3065409b42674f3611893ea027",
+      "rust_stdout_sha256": "169de5c8befe6ce46cc10b453856dfe85944cf3065409b42674f3611893ea027"
+    },
+    {
+      "fixture": "tests/json-patch-tests/package.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ebff5c8e8ea4c0b567a9f2fb758a8d4c7c7340bc906a83ac30000026d79856f5",
+      "rust_stdout_sha256": "ebff5c8e8ea4c0b567a9f2fb758a8d4c7c7340bc906a83ac30000026d79856f5"
+    },
+    {
+      "fixture": "tests/json-patch-tests/spec_tests.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9543c94fe7d1510199ac43ad2f5175425504aca86bba3eb8bcf7c9756e30e0f8",
+      "rust_stdout_sha256": "9543c94fe7d1510199ac43ad2f5175425504aca86bba3eb8bcf7c9756e30e0f8"
+    },
+    {
+      "fixture": "tests/json-patch-tests/tests.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c94ed104071bda9bdc651aa7c4fb68be0086753b6f9ae692895504fd198be85c",
+      "rust_stdout_sha256": "c94ed104071bda9bdc651aa7c4fb68be0086753b6f9ae692895504fd198be85c"
+    },
+    {
+      "fixture": "tests/parity/arr_all_ctrl_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "46db0e387dab8f9f5116a22080ee27312012ac9c2af1fe3a84658f2398067b89",
+      "rust_stdout_sha256": "46db0e387dab8f9f5116a22080ee27312012ac9c2af1fe3a84658f2398067b89"
+    },
+    {
+      "fixture": "tests/parity/arr_close_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "04f08eb68378825a9d9bd94fbf19168dfa966d7283e4dd747f56f2c2f3c070c1",
+      "rust_stdout_sha256": "04f08eb68378825a9d9bd94fbf19168dfa966d7283e4dd747f56f2c2f3c070c1"
+    },
+    {
+      "fixture": "tests/parity/arr_colon.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3d725a4e44e1ff6f897cc2443e03d9ecf3ea456a26a4a01b11c68149e5e4a354",
+      "rust_stdout_sha256": "3d725a4e44e1ff6f897cc2443e03d9ecf3ea456a26a4a01b11c68149e5e4a354"
+    },
+    {
+      "fixture": "tests/parity/arr_ctrl_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2c44b319ba724702894089c6ac6168a5e7cbee870be52043dfe1e145f5f37ebd",
+      "rust_stdout_sha256": "2c44b319ba724702894089c6ac6168a5e7cbee870be52043dfe1e145f5f37ebd"
+    },
+    {
+      "fixture": "tests/parity/arr_double_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3ab05f3e2584431d71abbd3d302da9227e77c3a7e5d22c74878166072e3958bc",
+      "rust_stdout_sha256": "3ab05f3e2584431d71abbd3d302da9227e77c3a7e5d22c74878166072e3958bc"
+    },
+    {
+      "fixture": "tests/parity/arr_empty.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "031b2e4e3e0fef88ccd5dbd80389f971c3bf02da5a618f24dcd7306a2eb92423",
+      "rust_stdout_sha256": "031b2e4e3e0fef88ccd5dbd80389f971c3bf02da5a618f24dcd7306a2eb92423"
+    },
+    {
+      "fixture": "tests/parity/arr_empty_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a067d768529b69e5e9c72e47d85288d3fdf6f1c105c55ea2334dcc749b196d1b",
+      "rust_stdout_sha256": "a067d768529b69e5e9c72e47d85288d3fdf6f1c105c55ea2334dcc749b196d1b"
+    },
+    {
+      "fixture": "tests/parity/arr_empty_ws_all.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c6e7bb10c942ad3e7f2cdc5d73252bf92ad1672697c05920160a5a2a0776d97e",
+      "rust_stdout_sha256": "c6e7bb10c942ad3e7f2cdc5d73252bf92ad1672697c05920160a5a2a0776d97e"
+    },
+    {
+      "fixture": "tests/parity/arr_leading_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9c9fceab91ebeccdb93bc25e39c501a880c4d83d0c3d147b41e112bf0c69399e",
+      "rust_stdout_sha256": "9c9fceab91ebeccdb93bc25e39c501a880c4d83d0c3d147b41e112bf0c69399e"
+    },
+    {
+      "fixture": "tests/parity/arr_literals.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "700a8e0ce90a1b5b947a9303f4841f8f0fc3481010a1d9339eeb210afca3c82c",
+      "rust_stdout_sha256": "700a8e0ce90a1b5b947a9303f4841f8f0fc3481010a1d9339eeb210afca3c82c"
+    },
+    {
+      "fixture": "tests/parity/arr_mismatched.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ba7cdf4ce17156d3acf7d65b5e85568f27c61853870efb7a1189f229ea935a67",
+      "rust_stdout_sha256": "ba7cdf4ce17156d3acf7d65b5e85568f27c61853870efb7a1189f229ea935a67"
+    },
+    {
+      "fixture": "tests/parity/arr_missing_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "36c8fc4f583cf3e6ddf0cc96e8f54d86fbc4085dc155a693edfc40a3ca032662",
+      "rust_stdout_sha256": "36c8fc4f583cf3e6ddf0cc96e8f54d86fbc4085dc155a693edfc40a3ca032662"
+    },
+    {
+      "fixture": "tests/parity/arr_mixed.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d916dd00776c34ada4abf95b1bdb02e8f3ea2393fb18ffea5898d579d7d31e22",
+      "rust_stdout_sha256": "d916dd00776c34ada4abf95b1bdb02e8f3ea2393fb18ffea5898d579d7d31e22"
+    },
+    {
+      "fixture": "tests/parity/arr_nested.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "168dd2b3d24ed84c2763f344ca9a07cb7bb4d2922fddd7db66f743a996337da6",
+      "rust_stdout_sha256": "168dd2b3d24ed84c2763f344ca9a07cb7bb4d2922fddd7db66f743a996337da6"
+    },
+    {
+      "fixture": "tests/parity/arr_nested_objects.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "bc5a3b8f57835211cabb49bed0d656ee6bfee86948f2a12fa619de4442864a5a",
+      "rust_stdout_sha256": "bc5a3b8f57835211cabb49bed0d656ee6bfee86948f2a12fa619de4442864a5a"
+    },
+    {
+      "fixture": "tests/parity/arr_nested_values.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1a50b4d5e6a6955a9664a98d536782958d103ff4bbe3535e9be595ba3af43d09",
+      "rust_stdout_sha256": "1a50b4d5e6a6955a9664a98d536782958d103ff4bbe3535e9be595ba3af43d09"
+    },
+    {
+      "fixture": "tests/parity/arr_nul_after_open.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "49e2bb322b0368012502414444a23945d64deface438b69257e875c2a1fc73a2",
+      "rust_stdout_sha256": "49e2bb322b0368012502414444a23945d64deface438b69257e875c2a1fc73a2"
+    },
+    {
+      "fixture": "tests/parity/arr_nul_as_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3ec20fb6329dc3d8b2513cfdf8c9d7222017ced7f7dcae3a4c0fbef7837281e3",
+      "rust_stdout_sha256": "3ec20fb6329dc3d8b2513cfdf8c9d7222017ced7f7dcae3a4c0fbef7837281e3"
+    },
+    {
+      "fixture": "tests/parity/arr_only_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ac6282d371c7987c227302062dcb309f5b36e6d59dbaf1f280189ab2075d766a",
+      "rust_stdout_sha256": "ac6282d371c7987c227302062dcb309f5b36e6d59dbaf1f280189ab2075d766a"
+    },
+    {
+      "fixture": "tests/parity/arr_single_neg.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5dfbbdfce58c2ce52d344f730368dba880b867981808cdba48397e63d26c9787",
+      "rust_stdout_sha256": "5dfbbdfce58c2ce52d344f730368dba880b867981808cdba48397e63d26c9787"
+    },
+    {
+      "fixture": "tests/parity/arr_single_number.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "91778f423b8109d7ee956255e467a8c3da659c94536de608f3b5db1bb1f744ba",
+      "rust_stdout_sha256": "91778f423b8109d7ee956255e467a8c3da659c94536de608f3b5db1bb1f744ba"
+    },
+    {
+      "fixture": "tests/parity/arr_strings.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f056ec168fb12ddcb97744e0bf3e7740002ad3c4922b17ac98387f15543e699a",
+      "rust_stdout_sha256": "f056ec168fb12ddcb97744e0bf3e7740002ad3c4922b17ac98387f15543e699a"
+    },
+    {
+      "fixture": "tests/parity/arr_trailing_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "039d8d1cd8ecea83d0d43921520311fc1b212d1eefd80ba06912a22056da264d",
+      "rust_stdout_sha256": "039d8d1cd8ecea83d0d43921520311fc1b212d1eefd80ba06912a22056da264d"
+    },
+    {
+      "fixture": "tests/parity/arr_unclosed.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7eb5640b3bfcf3ccea44fbd30b8548765c04a884cd5e04fb3ba20916f435a019",
+      "rust_stdout_sha256": "7eb5640b3bfcf3ccea44fbd30b8548765c04a884cd5e04fb3ba20916f435a019"
+    },
+    {
+      "fixture": "tests/parity/arr_unclosed_after_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e1d2cfe36df7a0307aebe3fdb1277405a9023da81d7ae9a7556bec9a2eefcb15",
+      "rust_stdout_sha256": "e1d2cfe36df7a0307aebe3fdb1277405a9023da81d7ae9a7556bec9a2eefcb15"
+    },
+    {
+      "fixture": "tests/parity/arr_unclosed_empty.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "758ba50e41dbc80f10d136f1b24a6c53f86b0dd8b3c50c8dd6f9a4b603261d15",
+      "rust_stdout_sha256": "758ba50e41dbc80f10d136f1b24a6c53f86b0dd8b3c50c8dd6f9a4b603261d15"
+    },
+    {
+      "fixture": "tests/parity/arr_value_then_garbage.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b1c1dcda0a0d4ce79445492511be8afae7f30c8a0072bb1787d695dced8da968",
+      "rust_stdout_sha256": "b1c1dcda0a0d4ce79445492511be8afae7f30c8a0072bb1787d695dced8da968"
+    },
+    {
+      "fixture": "tests/parity/arr_ws_variants.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1ce23366de4cdfe27e5f2b01fcccf3f2e6cdc6e52b61f28f025fc9940f67d09d",
+      "rust_stdout_sha256": "1ce23366de4cdfe27e5f2b01fcccf3f2e6cdc6e52b61f28f025fc9940f67d09d"
+    },
+    {
+      "fixture": "tests/parity/big_arr_1000_floats.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d14090acf08b145d9b87fc6992fdb5b76766a167878c12bb65e83bca5b0820ba",
+      "rust_stdout_sha256": "d14090acf08b145d9b87fc6992fdb5b76766a167878c12bb65e83bca5b0820ba"
+    },
+    {
+      "fixture": "tests/parity/big_arr_1000_ints.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f63df3b29864ce48d5c12481e4ff557cc9338b2ff5427f2cd81b5a5dd409459e",
+      "rust_stdout_sha256": "f63df3b29864ce48d5c12481e4ff557cc9338b2ff5427f2cd81b5a5dd409459e"
+    },
+    {
+      "fixture": "tests/parity/big_arr_1000_mixed.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2b8adbde19f0e722670949430b43148c0ccd35c3a1385f530560369c3bc067a6",
+      "rust_stdout_sha256": "2b8adbde19f0e722670949430b43148c0ccd35c3a1385f530560369c3bc067a6"
+    },
+    {
+      "fixture": "tests/parity/big_obj_500.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "67881a8301e9cd1a94d66538eac6294c0405cf390ca2eff32b7b16b201e7f247",
+      "rust_stdout_sha256": "67881a8301e9cd1a94d66538eac6294c0405cf390ca2eff32b7b16b201e7f247"
+    },
+    {
+      "fixture": "tests/parity/big_str_4k.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "25322d89c19c65d8cf2e09adb7d08af9f4b0bcd2f71b4e1ee29721a778284fc5",
+      "rust_stdout_sha256": "25322d89c19c65d8cf2e09adb7d08af9f4b0bcd2f71b4e1ee29721a778284fc5"
+    },
+    {
+      "fixture": "tests/parity/big_str_4k_escapes.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "102436cbc93e1a5d99cc8b33a5c9867ea80481e994c84a4547aad379f2be7b9b",
+      "rust_stdout_sha256": "102436cbc93e1a5d99cc8b33a5c9867ea80481e994c84a4547aad379f2be7b9b"
+    },
+    {
+      "fixture": "tests/parity/big_str_4k_unterminated.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b7c6aff06d5ad032255b77ac7f80bdf3957195bbb1dcded5d801c0f074cbac3f",
+      "rust_stdout_sha256": "b7c6aff06d5ad032255b77ac7f80bdf3957195bbb1dcded5d801c0f074cbac3f"
+    },
+    {
+      "fixture": "tests/parity/bom_after_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a48f67712d23c95e53b2450ea181d6f2a2579954b1e78be0171591f6712eda30",
+      "rust_stdout_sha256": "a48f67712d23c95e53b2450ea181d6f2a2579954b1e78be0171591f6712eda30"
+    },
+    {
+      "fixture": "tests/parity/bom_arr.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "49f210a072fa77f95ef50d8a16dc8ba1965aa4258c11360cc20ac2a2bc1b481a",
+      "rust_stdout_sha256": "49f210a072fa77f95ef50d8a16dc8ba1965aa4258c11360cc20ac2a2bc1b481a"
+    },
+    {
+      "fixture": "tests/parity/bom_double.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f4e029b3292b48a3179d85871eaf5735f0f4caaf761ba23e944178f35dd149b0",
+      "rust_stdout_sha256": "f4e029b3292b48a3179d85871eaf5735f0f4caaf761ba23e944178f35dd149b0"
+    },
+    {
+      "fixture": "tests/parity/bom_in_string.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a16083a5ae8084fe0f6371263dd3f982a6867560e0e45edc6a5d7ce6b1d115e3",
+      "rust_stdout_sha256": "a16083a5ae8084fe0f6371263dd3f982a6867560e0e45edc6a5d7ce6b1d115e3"
+    },
+    {
+      "fixture": "tests/parity/bom_inside_array.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "85eafa638fd5118cca38b814a51ce415784376f6436f86d171bf870181f2ae6f",
+      "rust_stdout_sha256": "85eafa638fd5118cca38b814a51ce415784376f6436f86d171bf870181f2ae6f"
+    },
+    {
+      "fixture": "tests/parity/bom_num.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5444e752c82c97c0ee3b9f89f25bc281ef4bb56d84c2ad6a04069d7a84c1025d",
+      "rust_stdout_sha256": "5444e752c82c97c0ee3b9f89f25bc281ef4bb56d84c2ad6a04069d7a84c1025d"
+    },
+    {
+      "fixture": "tests/parity/bom_obj.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7335a71b39440a479743737b0dde16788fb791e676c6a078cc432c2ab20956fd",
+      "rust_stdout_sha256": "7335a71b39440a479743737b0dde16788fb791e676c6a078cc432c2ab20956fd"
+    },
+    {
+      "fixture": "tests/parity/bom_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "21013463a9b03085d946ef779f8a84a4b1763bccb1e40cabb546fe9c57d4757a",
+      "rust_stdout_sha256": "21013463a9b03085d946ef779f8a84a4b1763bccb1e40cabb546fe9c57d4757a"
+    },
+    {
+      "fixture": "tests/parity/bom_partial.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d6f35698eaf42a80df19559c6263d6b9e3d7ad57b6bc230508cd3ae75c6b0d06",
+      "rust_stdout_sha256": "d6f35698eaf42a80df19559c6263d6b9e3d7ad57b6bc230508cd3ae75c6b0d06"
+    },
+    {
+      "fixture": "tests/parity/bom_str.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "310b9fdd92e31dc37cc37f3655138c8572ad129b3356d2c8cd64cea9971e3f84",
+      "rust_stdout_sha256": "310b9fdd92e31dc37cc37f3655138c8572ad129b3356d2c8cd64cea9971e3f84"
+    },
+    {
+      "fixture": "tests/parity/bom_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6662970aadd6945df7bb8c064ced6dd4de8385626a588e245f1c5418f526e0b1",
+      "rust_stdout_sha256": "6662970aadd6945df7bb8c064ced6dd4de8385626a588e245f1c5418f526e0b1"
+    },
+    {
+      "fixture": "tests/parity/bom_ws_then_value.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5ad43436f6a3ed43a8032b591fc7edf40e0864c87e597d1e73c41f534b38716c",
+      "rust_stdout_sha256": "5ad43436f6a3ed43a8032b591fc7edf40e0864c87e597d1e73c41f534b38716c"
+    },
+    {
+      "fixture": "tests/parity/deep_arr_100.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4205bc345ab1ab55b1f67b68021cfbb2f326e11d99976b1b9edd908c2433212a",
+      "rust_stdout_sha256": "4205bc345ab1ab55b1f67b68021cfbb2f326e11d99976b1b9edd908c2433212a"
+    },
+    {
+      "fixture": "tests/parity/deep_arr_1000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "41dab3406bb17e72cd88ec733371f565a52ebb7f09e205877817f13ca5222bee",
+      "rust_stdout_sha256": "41dab3406bb17e72cd88ec733371f565a52ebb7f09e205877817f13ca5222bee"
+    },
+    {
+      "fixture": "tests/parity/deep_arr_1000_unclosed.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c376032f2545fad34e46ff02eb0cb9458de359b80d8cec47d72640197b58b5b1",
+      "rust_stdout_sha256": "c376032f2545fad34e46ff02eb0cb9458de359b80d8cec47d72640197b58b5b1"
+    },
+    {
+      "fixture": "tests/parity/deep_arr_1000_value.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a4ed0b143833c6ee48c693dd9f7098c416169709bb119c5c5aa245ddd469dcfb",
+      "rust_stdout_sha256": "a4ed0b143833c6ee48c693dd9f7098c416169709bb119c5c5aa245ddd469dcfb"
+    },
+    {
+      "fixture": "tests/parity/deep_arr_1001.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "acc7e7c68d4bf14a9b9b75b2206821f9291e5a69b033eefd9c943c13c797dd84",
+      "rust_stdout_sha256": "acc7e7c68d4bf14a9b9b75b2206821f9291e5a69b033eefd9c943c13c797dd84"
+    },
+    {
+      "fixture": "tests/parity/deep_arr_1001_value.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ae8d4ab88c634fc3067218520df34c2fc255c328a7e48b1d0b23c154981ed2f5",
+      "rust_stdout_sha256": "ae8d4ab88c634fc3067218520df34c2fc255c328a7e48b1d0b23c154981ed2f5"
+    },
+    {
+      "fixture": "tests/parity/deep_arr_2000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3b0bada36759d701df0eadd26cb12b768e62e380699dc450d45ed71189408493",
+      "rust_stdout_sha256": "3b0bada36759d701df0eadd26cb12b768e62e380699dc450d45ed71189408493"
+    },
+    {
+      "fixture": "tests/parity/deep_arr_999.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ff7560a654df04aa80795f7ba92e815a0e8bfbbf0ced76911ad02ed70a28ebac",
+      "rust_stdout_sha256": "ff7560a654df04aa80795f7ba92e815a0e8bfbbf0ced76911ad02ed70a28ebac"
+    },
+    {
+      "fixture": "tests/parity/deep_mixed_1000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "58bbeef2422ecbcb3f0a319895041efc9d9c171577a9b82ba9b719f07fa343fb",
+      "rust_stdout_sha256": "58bbeef2422ecbcb3f0a319895041efc9d9c171577a9b82ba9b719f07fa343fb"
+    },
+    {
+      "fixture": "tests/parity/deep_mixed_1001.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "fca2f68241359e89b191f19026d028ecde2b2f629cc1cf913a05df27acfd4d36",
+      "rust_stdout_sha256": "fca2f68241359e89b191f19026d028ecde2b2f629cc1cf913a05df27acfd4d36"
+    },
+    {
+      "fixture": "tests/parity/deep_obj_1000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f7f44dcf8024419285846abe621af9839919c1957b4fcaeda54d83a61cebc759",
+      "rust_stdout_sha256": "f7f44dcf8024419285846abe621af9839919c1957b4fcaeda54d83a61cebc759"
+    },
+    {
+      "fixture": "tests/parity/deep_obj_1001.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "52fab02c3aefd7505c7d979ac914ba92b687fa281df15f33165730fe2b270d64",
+      "rust_stdout_sha256": "52fab02c3aefd7505c7d979ac914ba92b687fa281df15f33165730fe2b270d64"
+    },
+    {
+      "fixture": "tests/parity/deep_obj_19.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e8e0f0ce574aec48ce78de5534f17be8f344423a42b082c7f77f214ec25a9893",
+      "rust_stdout_sha256": "e8e0f0ce574aec48ce78de5534f17be8f344423a42b082c7f77f214ec25a9893"
+    },
+    {
+      "fixture": "tests/parity/deep_obj_20.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "fc0dad340645dc37b3d6822449c15086e7fdb651d77753136f71b02bdec183af",
+      "rust_stdout_sha256": "fc0dad340645dc37b3d6822449c15086e7fdb651d77753136f71b02bdec183af"
+    },
+    {
+      "fixture": "tests/parity/deep_obj_999.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e11527993a075bc24e54301b6eb54155e4bf9f947e69202f9133ef4ce27bd10a",
+      "rust_stdout_sha256": "e11527993a075bc24e54301b6eb54155e4bf9f947e69202f9133ef4ce27bd10a"
+    },
+    {
+      "fixture": "tests/parity/lit_f.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e219df8ed4394e928204355b9c684630357dcc6a5ae772ce0ab3f133bbada39f",
+      "rust_stdout_sha256": "e219df8ed4394e928204355b9c684630357dcc6a5ae772ce0ab3f133bbada39f"
+    },
+    {
+      "fixture": "tests/parity/lit_fals.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a8fb1b869336ea35f90f00688271636b251ef2252b0095c91991f0d7304ac6e8",
+      "rust_stdout_sha256": "a8fb1b869336ea35f90f00688271636b251ef2252b0095c91991f0d7304ac6e8"
+    },
+    {
+      "fixture": "tests/parity/lit_false.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5a9316277d378656234a5ca7bef106ae6118d1d5fef7b00aefb0b5674cb8e021",
+      "rust_stdout_sha256": "5a9316277d378656234a5ca7bef106ae6118d1d5fef7b00aefb0b5674cb8e021"
+    },
+    {
+      "fixture": "tests/parity/lit_in_array_nul.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "11a8f32c9a61045eb34e0d08718b0be8a9fc21ec16e80d6314af2e9b8f111321",
+      "rust_stdout_sha256": "11a8f32c9a61045eb34e0d08718b0be8a9fc21ec16e80d6314af2e9b8f111321"
+    },
+    {
+      "fixture": "tests/parity/lit_in_array_tru.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c0647677fa166e0246b86bf6bda67d2ad0155263d556c4c8b088a1580ca1aa4e",
+      "rust_stdout_sha256": "c0647677fa166e0246b86bf6bda67d2ad0155263d556c4c8b088a1580ca1aa4e"
+    },
+    {
+      "fixture": "tests/parity/lit_in_object_fals.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d6c724568ea62f7c61409ed06f6d5fd4eb0a1eb1b6b88cef194dd89f5f5b3c2e",
+      "rust_stdout_sha256": "d6c724568ea62f7c61409ed06f6d5fd4eb0a1eb1b6b88cef194dd89f5f5b3c2e"
+    },
+    {
+      "fixture": "tests/parity/lit_n.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "089c08dc640e5bf3ea6e22d4aa38be7ad52993c7eb20be61aeb3247c2afd84f8",
+      "rust_stdout_sha256": "089c08dc640e5bf3ea6e22d4aa38be7ad52993c7eb20be61aeb3247c2afd84f8"
+    },
+    {
+      "fixture": "tests/parity/lit_nul.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f6da0ec447795cd5d30c13f07bfbe693b1d7b59758ff35de8d24c8540503a2ec",
+      "rust_stdout_sha256": "f6da0ec447795cd5d30c13f07bfbe693b1d7b59758ff35de8d24c8540503a2ec"
+    },
+    {
+      "fixture": "tests/parity/lit_null.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "87024dbad6c2a905bcd9ed0b4cd32dd80e89985a68c2d6aca8ccee17e8dc7960",
+      "rust_stdout_sha256": "87024dbad6c2a905bcd9ed0b4cd32dd80e89985a68c2d6aca8ccee17e8dc7960"
+    },
+    {
+      "fixture": "tests/parity/lit_null_null.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7fdffee3472bb0c6c94660a905a96af802b18378cb4c10eb1f33b4e45a890c93",
+      "rust_stdout_sha256": "7fdffee3472bb0c6c94660a905a96af802b18378cb4c10eb1f33b4e45a890c93"
+    },
+    {
+      "fixture": "tests/parity/lit_null_upper.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9a97d2edb88e4f32f3cf1dd1868ff5112769a7a5c57c186029acf114db67317d",
+      "rust_stdout_sha256": "9a97d2edb88e4f32f3cf1dd1868ff5112769a7a5c57c186029acf114db67317d"
+    },
+    {
+      "fixture": "tests/parity/lit_nullx.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "82de3b7a7f89fb87326360fc5c3e8b7aba95d3eb6f78b099d78e64b80afb9bbb",
+      "rust_stdout_sha256": "82de3b7a7f89fb87326360fc5c3e8b7aba95d3eb6f78b099d78e64b80afb9bbb"
+    },
+    {
+      "fixture": "tests/parity/lit_t.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "86451f94dca2657fe5f1d500140ac0a3422a44c1a322a5807ca3137107ae1b42",
+      "rust_stdout_sha256": "86451f94dca2657fe5f1d500140ac0a3422a44c1a322a5807ca3137107ae1b42"
+    },
+    {
+      "fixture": "tests/parity/lit_tru.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "cff5ca4dda6a38e30b275f69afd84ba081a5317c89793d9f702ed4e90d695461",
+      "rust_stdout_sha256": "cff5ca4dda6a38e30b275f69afd84ba081a5317c89793d9f702ed4e90d695461"
+    },
+    {
+      "fixture": "tests/parity/lit_true.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3495f56aceb7ce5b948bc46cb4493e68db8c4eaf17222673523adb012079dd16",
+      "rust_stdout_sha256": "3495f56aceb7ce5b948bc46cb4493e68db8c4eaf17222673523adb012079dd16"
+    },
+    {
+      "fixture": "tests/parity/lit_true_title.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ba07298ec23ee153150b95559e8be33fc4aeedebd8325c710f8f07a56fea686f",
+      "rust_stdout_sha256": "ba07298ec23ee153150b95559e8be33fc4aeedebd8325c710f8f07a56fea686f"
+    },
+    {
+      "fixture": "tests/parity/lit_true_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1144d053148303c78f67a511d686da4c2de218e02922d2a80d6233e98de5599f",
+      "rust_stdout_sha256": "1144d053148303c78f67a511d686da4c2de218e02922d2a80d6233e98de5599f"
+    },
+    {
+      "fixture": "tests/parity/lit_truefalse.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "330667e4b634857caed53b1ff85f09dfd9e8b7d3c90f0120d2b322117d05165c",
+      "rust_stdout_sha256": "330667e4b634857caed53b1ff85f09dfd9e8b7d3c90f0120d2b322117d05165c"
+    },
+    {
+      "fixture": "tests/parity/lit_undefined.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "05604c920bb58bd64188a41fda0a96ec91acc47c04276c5bb4d962030c6cda8e",
+      "rust_stdout_sha256": "05604c920bb58bd64188a41fda0a96ec91acc47c04276c5bb4d962030c6cda8e"
+    },
+    {
+      "fixture": "tests/parity/min_all_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "fa3b6f5da99e835a3497d7d72183b53cf47874ca12093fc71bb286ab14cc33ae",
+      "rust_stdout_sha256": "fa3b6f5da99e835a3497d7d72183b53cf47874ca12093fc71bb286ab14cc33ae"
+    },
+    {
+      "fixture": "tests/parity/min_backslash_backslash_quote.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "de4892e336b49ad0d38d0d12d7063d82548eb7291691df7eddb0dd3259dbd336",
+      "rust_stdout_sha256": "de4892e336b49ad0d38d0d12d7063d82548eb7291691df7eddb0dd3259dbd336"
+    },
+    {
+      "fixture": "tests/parity/min_block_comment.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6777749873713b1b389279a3ff7635e31d00fac90f1719658fee7f888181d564",
+      "rust_stdout_sha256": "6777749873713b1b389279a3ff7635e31d00fac90f1719658fee7f888181d564"
+    },
+    {
+      "fixture": "tests/parity/min_block_multiline.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "772299d30d81d6f81c611da567484854fd2f3d4b80d93aa5a4aa209bd9a4474c",
+      "rust_stdout_sha256": "772299d30d81d6f81c611da567484854fd2f3d4b80d93aa5a4aa209bd9a4474c"
+    },
+    {
+      "fixture": "tests/parity/min_block_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c1714eeb92bfd2c09055247fee77fb42b42c3f7786e7b7b17c16d7502882fbf8",
+      "rust_stdout_sha256": "c1714eeb92bfd2c09055247fee77fb42b42c3f7786e7b7b17c16d7502882fbf8"
+    },
+    {
+      "fixture": "tests/parity/min_comment_between_tokens.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "fd09ecebb69998367d0d6779736eeac717414ca8b5c9e45b09c5133c660e5a50",
+      "rust_stdout_sha256": "fd09ecebb69998367d0d6779736eeac717414ca8b5c9e45b09c5133c660e5a50"
+    },
+    {
+      "fixture": "tests/parity/min_comment_in_key.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e128e72d78855f9bfc289cc017a44a6627031c68923f9c8e4a6b81711facfe84",
+      "rust_stdout_sha256": "e128e72d78855f9bfc289cc017a44a6627031c68923f9c8e4a6b81711facfe84"
+    },
+    {
+      "fixture": "tests/parity/min_comment_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0491cbdbb8d78ea98f5c849d6d2caee985c1588be58e634260ae5baebbb68c59",
+      "rust_stdout_sha256": "0491cbdbb8d78ea98f5c849d6d2caee985c1588be58e634260ae5baebbb68c59"
+    },
+    {
+      "fixture": "tests/parity/min_crlf_comments.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "703009e9205d7966ea885a751356939f3f90f4cb3e8ec1c4d56df046f545b810",
+      "rust_stdout_sha256": "703009e9205d7966ea885a751356939f3f90f4cb3e8ec1c4d56df046f545b810"
+    },
+    {
+      "fixture": "tests/parity/min_empty_block.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6c39831f378b5a3b419bde99b70aad1f64369f1a11db68296579006ef94331e4",
+      "rust_stdout_sha256": "6c39831f378b5a3b419bde99b70aad1f64369f1a11db68296579006ef94331e4"
+    },
+    {
+      "fixture": "tests/parity/min_escaped_quote_marker.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "828f30b56d73d96f385b5d0650286f3cede730ef1035e27d3dfcdc58db73fd4c",
+      "rust_stdout_sha256": "828f30b56d73d96f385b5d0650286f3cede730ef1035e27d3dfcdc58db73fd4c"
+    },
+    {
+      "fixture": "tests/parity/min_line_comment.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a1ab25d9e5cabda64362cd6ce9ef36b84da5a59a8c200d1c8b9d4136d4f3b200",
+      "rust_stdout_sha256": "a1ab25d9e5cabda64362cd6ce9ef36b84da5a59a8c200d1c8b9d4136d4f3b200"
+    },
+    {
+      "fixture": "tests/parity/min_lone_slash.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4bf83f1671c98f92f22ea6039c877414db53b9316567f5b6aed837428984b36c",
+      "rust_stdout_sha256": "4bf83f1671c98f92f22ea6039c877414db53b9316567f5b6aed837428984b36c"
+    },
+    {
+      "fixture": "tests/parity/min_nested_block.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a105a3423e7b285ee44df40c02ffc336fd692deef2938a74adb6fbd3c3cc5397",
+      "rust_stdout_sha256": "a105a3423e7b285ee44df40c02ffc336fd692deef2938a74adb6fbd3c3cc5397"
+    },
+    {
+      "fixture": "tests/parity/min_nul_then_more.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "884a090920c87925a7659b0886dc29be5510d7b4745a411a17ba89f28cdd5015",
+      "rust_stdout_sha256": "884a090920c87925a7659b0886dc29be5510d7b4745a411a17ba89f28cdd5015"
+    },
+    {
+      "fixture": "tests/parity/min_slash_eof.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6b5919d3b0d4ed41885495a231d6656d3d98079c724220561e1d853df678e9c6",
+      "rust_stdout_sha256": "6b5919d3b0d4ed41885495a231d6656d3d98079c724220561e1d853df678e9c6"
+    },
+    {
+      "fixture": "tests/parity/min_slash_in_string_end.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6efd4176b478ad56a8f63d70413a92c5d177607feab5fde42932046df1899e89",
+      "rust_stdout_sha256": "6efd4176b478ad56a8f63d70413a92c5d177607feab5fde42932046df1899e89"
+    },
+    {
+      "fixture": "tests/parity/min_slash_star_slash.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "bea5d5078b1af5d0f6e96a9f128795e17e0fc9aaaa51dabd7de3b532eddde6e1",
+      "rust_stdout_sha256": "bea5d5078b1af5d0f6e96a9f128795e17e0fc9aaaa51dabd7de3b532eddde6e1"
+    },
+    {
+      "fixture": "tests/parity/min_star_eof.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "da1f3ec910c17b6b66c55ab6d809799d5c8295cfa8491ffde670d91a099c5c15",
+      "rust_stdout_sha256": "da1f3ec910c17b6b66c55ab6d809799d5c8295cfa8491ffde670d91a099c5c15"
+    },
+    {
+      "fixture": "tests/parity/min_string_backslash_eof.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "63033fcf9622071a8d3c57e44b7f56c8a02eea94997fd66ac6afd56efa4c45a0",
+      "rust_stdout_sha256": "63033fcf9622071a8d3c57e44b7f56c8a02eea94997fd66ac6afd56efa4c45a0"
+    },
+    {
+      "fixture": "tests/parity/min_string_comment_markers.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c34dcc30071dc1b65de7cb964a976946363010c747ac396eddfcafc2c316298f",
+      "rust_stdout_sha256": "c34dcc30071dc1b65de7cb964a976946363010c747ac396eddfcafc2c316298f"
+    },
+    {
+      "fixture": "tests/parity/min_unterminated_block.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "73cdb2c79e9415dfe0d229cc02f8cf719306f69ccf895a898bedb214c6b67f18",
+      "rust_stdout_sha256": "73cdb2c79e9415dfe0d229cc02f8cf719306f69ccf895a898bedb214c6b67f18"
+    },
+    {
+      "fixture": "tests/parity/min_unterminated_line.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f10c7e239017c2e9c604b347981d1aaab732dd5d3017d3dafeaa2e9e7f4df9c9",
+      "rust_stdout_sha256": "f10c7e239017c2e9c604b347981d1aaab732dd5d3017d3dafeaa2e9e7f4df9c9"
+    },
+    {
+      "fixture": "tests/parity/min_unterminated_string.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d53aaa8c5a2c762e83f3ae03927b05bfcb24258efd5425b67e78a80c9f8e2800",
+      "rust_stdout_sha256": "d53aaa8c5a2c762e83f3ae03927b05bfcb24258efd5425b67e78a80c9f8e2800"
+    },
+    {
+      "fixture": "tests/parity/min_ws_inside_string.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b24ef266c132f91df5de753c9432cebbd63db2fbea5dec1e858976444e1f543b",
+      "rust_stdout_sha256": "b24ef266c132f91df5de753c9432cebbd63db2fbea5dec1e858976444e1f543b"
+    },
+    {
+      "fixture": "tests/parity/mut_000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c607df866f55cb775457c7882da043ca9df13e820b049f2aefcf89c61c94af84",
+      "rust_stdout_sha256": "c607df866f55cb775457c7882da043ca9df13e820b049f2aefcf89c61c94af84"
+    },
+    {
+      "fixture": "tests/parity/mut_001.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9d3cf973c77936654658c578a37b82ff89366c3c45cfcd17d7e21d26c6d482ff",
+      "rust_stdout_sha256": "9d3cf973c77936654658c578a37b82ff89366c3c45cfcd17d7e21d26c6d482ff"
+    },
+    {
+      "fixture": "tests/parity/mut_002.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b662828f263490b71ea4a4f63628520822d84171fb2c4bc6c709a4c8e7d92ae2",
+      "rust_stdout_sha256": "b662828f263490b71ea4a4f63628520822d84171fb2c4bc6c709a4c8e7d92ae2"
+    },
+    {
+      "fixture": "tests/parity/mut_003.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "043d0ef466a68b7fab20472b00fa6c9ac123d2cd959eba835f9c3981fde0a280",
+      "rust_stdout_sha256": "043d0ef466a68b7fab20472b00fa6c9ac123d2cd959eba835f9c3981fde0a280"
+    },
+    {
+      "fixture": "tests/parity/mut_004.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5477535e3e13ab9f443f2497659c60c18e53da87ab75028d9e508701a99ae282",
+      "rust_stdout_sha256": "5477535e3e13ab9f443f2497659c60c18e53da87ab75028d9e508701a99ae282"
+    },
+    {
+      "fixture": "tests/parity/mut_005.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1884d0607fcce9eb88cd5736488aa9818d97ce10d9087dd0514bb4ab11991f88",
+      "rust_stdout_sha256": "1884d0607fcce9eb88cd5736488aa9818d97ce10d9087dd0514bb4ab11991f88"
+    },
+    {
+      "fixture": "tests/parity/mut_006.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "da529805eb046ca4d68faf63c781b92d3ec22aa503a9a13fc1f2a1e2654b07ba",
+      "rust_stdout_sha256": "da529805eb046ca4d68faf63c781b92d3ec22aa503a9a13fc1f2a1e2654b07ba"
+    },
+    {
+      "fixture": "tests/parity/mut_007.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d093f5e7c9faec143033bad71f2182b743da65604c31cc29ec2519a37e29f66a",
+      "rust_stdout_sha256": "d093f5e7c9faec143033bad71f2182b743da65604c31cc29ec2519a37e29f66a"
+    },
+    {
+      "fixture": "tests/parity/mut_008.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f14211706959db6e4cf009a161cfc6224e8ed96eadf824db54015c59e55eaa43",
+      "rust_stdout_sha256": "f14211706959db6e4cf009a161cfc6224e8ed96eadf824db54015c59e55eaa43"
+    },
+    {
+      "fixture": "tests/parity/mut_009.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1dbaff241ffbda7eecf980caa6b172dd5696e88b50985f8c6f2f0a0529114084",
+      "rust_stdout_sha256": "1dbaff241ffbda7eecf980caa6b172dd5696e88b50985f8c6f2f0a0529114084"
+    },
+    {
+      "fixture": "tests/parity/mut_010.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e954823f1d5efe84b14c5dbc2b35407d5717376263d12adad2e4fa48753d633b",
+      "rust_stdout_sha256": "e954823f1d5efe84b14c5dbc2b35407d5717376263d12adad2e4fa48753d633b"
+    },
+    {
+      "fixture": "tests/parity/mut_011.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f4cb722c90e7d712c54f407d97ea74c5d3cb4be438c56cc221947125f22577ef",
+      "rust_stdout_sha256": "f4cb722c90e7d712c54f407d97ea74c5d3cb4be438c56cc221947125f22577ef"
+    },
+    {
+      "fixture": "tests/parity/mut_012.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7453ffdb00850f60f2f27b7acd6417c2f701ca8aa6984396a42c51461294af33",
+      "rust_stdout_sha256": "7453ffdb00850f60f2f27b7acd6417c2f701ca8aa6984396a42c51461294af33"
+    },
+    {
+      "fixture": "tests/parity/mut_013.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1f3d07856dce169181a9e85b71807b4613efc3d77786c3cb2bd936f75bc9bfcb",
+      "rust_stdout_sha256": "1f3d07856dce169181a9e85b71807b4613efc3d77786c3cb2bd936f75bc9bfcb"
+    },
+    {
+      "fixture": "tests/parity/mut_014.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e8cdefd04bd07572fc0be7c3a6b548fd8f1784b66ea7c5da10b8e7d90551da72",
+      "rust_stdout_sha256": "e8cdefd04bd07572fc0be7c3a6b548fd8f1784b66ea7c5da10b8e7d90551da72"
+    },
+    {
+      "fixture": "tests/parity/mut_015.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "40b6e99d2796b58d04576394784a3a02da9d2abb3416e93f005d62bee7607fb0",
+      "rust_stdout_sha256": "40b6e99d2796b58d04576394784a3a02da9d2abb3416e93f005d62bee7607fb0"
+    },
+    {
+      "fixture": "tests/parity/mut_016.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ae0f68bae70729ed75f8108cda4b56c10ff16650a5b535426d2ceb6b10ed6022",
+      "rust_stdout_sha256": "ae0f68bae70729ed75f8108cda4b56c10ff16650a5b535426d2ceb6b10ed6022"
+    },
+    {
+      "fixture": "tests/parity/mut_017.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5863438710c564c8dd1667176cb5decf2598324ebef6d5a632cd47dee3534662",
+      "rust_stdout_sha256": "5863438710c564c8dd1667176cb5decf2598324ebef6d5a632cd47dee3534662"
+    },
+    {
+      "fixture": "tests/parity/mut_018.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "015a3d007020955d969bb24523469488763975a0961194fc9155fcc5954df560",
+      "rust_stdout_sha256": "015a3d007020955d969bb24523469488763975a0961194fc9155fcc5954df560"
+    },
+    {
+      "fixture": "tests/parity/mut_019.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "00481c462d180015f45b88aef9cd5de142164b085db98c14678f8a9b57b87732",
+      "rust_stdout_sha256": "00481c462d180015f45b88aef9cd5de142164b085db98c14678f8a9b57b87732"
+    },
+    {
+      "fixture": "tests/parity/mut_020.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f6ca47156f9618bfec4c50734a655d9c3a81dd4aeb326e4aa6c784c9cab78a2d",
+      "rust_stdout_sha256": "f6ca47156f9618bfec4c50734a655d9c3a81dd4aeb326e4aa6c784c9cab78a2d"
+    },
+    {
+      "fixture": "tests/parity/mut_021.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4fe91e156d4b11b762177b3a61ff8b700650e53098860ce9e3bf80eac6cd3221",
+      "rust_stdout_sha256": "4fe91e156d4b11b762177b3a61ff8b700650e53098860ce9e3bf80eac6cd3221"
+    },
+    {
+      "fixture": "tests/parity/mut_022.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "739b1c9419a9bf8b307ae73b22962811371da34cb521058e4b3aca5f2d77d072",
+      "rust_stdout_sha256": "739b1c9419a9bf8b307ae73b22962811371da34cb521058e4b3aca5f2d77d072"
+    },
+    {
+      "fixture": "tests/parity/mut_023.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3ed5c1a453d7e06f7034b1dd16735c1aa310f849719645c5a24b08b1c8845d9c",
+      "rust_stdout_sha256": "3ed5c1a453d7e06f7034b1dd16735c1aa310f849719645c5a24b08b1c8845d9c"
+    },
+    {
+      "fixture": "tests/parity/mut_024.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f99e614bb964fd039c66d51ad2b6f9c5338da761f3befbe11423f1cb84d3a494",
+      "rust_stdout_sha256": "f99e614bb964fd039c66d51ad2b6f9c5338da761f3befbe11423f1cb84d3a494"
+    },
+    {
+      "fixture": "tests/parity/mut_025.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e60f01331f3e565954e5ab890fd86628bd3aabf228bee66635ff4c7addf346e5",
+      "rust_stdout_sha256": "e60f01331f3e565954e5ab890fd86628bd3aabf228bee66635ff4c7addf346e5"
+    },
+    {
+      "fixture": "tests/parity/mut_026.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d6350973c201bc45521096e22a44ab8c8c73fe227f66a5790df1d9d947d37bf9",
+      "rust_stdout_sha256": "d6350973c201bc45521096e22a44ab8c8c73fe227f66a5790df1d9d947d37bf9"
+    },
+    {
+      "fixture": "tests/parity/mut_027.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "281c16edd1f3844a66e4fccdfe2d29135f1daefe27da4842ed6947123a1174f5",
+      "rust_stdout_sha256": "281c16edd1f3844a66e4fccdfe2d29135f1daefe27da4842ed6947123a1174f5"
+    },
+    {
+      "fixture": "tests/parity/mut_028.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d93a570bc12005bde3e5002da22151452330626d3cdea80026b5b080f057d83b",
+      "rust_stdout_sha256": "d93a570bc12005bde3e5002da22151452330626d3cdea80026b5b080f057d83b"
+    },
+    {
+      "fixture": "tests/parity/mut_029.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5ca3dfb69ead0bb929b1e915414447d1c95ca25e8911973abf621563875287cd",
+      "rust_stdout_sha256": "5ca3dfb69ead0bb929b1e915414447d1c95ca25e8911973abf621563875287cd"
+    },
+    {
+      "fixture": "tests/parity/num_0_000001.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c794ad4ea30748868c905b4020a8104896601fbb296cf19f2db31b08807fcfb3",
+      "rust_stdout_sha256": "c794ad4ea30748868c905b4020a8104896601fbb296cf19f2db31b08807fcfb3"
+    },
+    {
+      "fixture": "tests/parity/num_0_1.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "69ca2161c5d4d1e9249cb9d313ca4968feaa2da0c0b6d22c203e9b7d0bc2708b",
+      "rust_stdout_sha256": "69ca2161c5d4d1e9249cb9d313ca4968feaa2da0c0b6d22c203e9b7d0bc2708b"
+    },
+    {
+      "fixture": "tests/parity/num_0_1e1.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1721a96826c5f9d5417f467cb68c58d0b3edfd4f9ad29a0b2651cb6a4144fb1d",
+      "rust_stdout_sha256": "1721a96826c5f9d5417f467cb68c58d0b3edfd4f9ad29a0b2651cb6a4144fb1d"
+    },
+    {
+      "fixture": "tests/parity/num_0_3.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "68f2126262d4d322bdf7ca960f5ad5714d12fe2af707d420f4acbf3696fe1708",
+      "rust_stdout_sha256": "68f2126262d4d322bdf7ca960f5ad5714d12fe2af707d420f4acbf3696fe1708"
+    },
+    {
+      "fixture": "tests/parity/num_0_30000000000000004.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "bc48f569e1859da91c9f127e8e28a86cf378df01ff7fa463b87a7d84b2d3f067",
+      "rust_stdout_sha256": "bc48f569e1859da91c9f127e8e28a86cf378df01ff7fa463b87a7d84b2d3f067"
+    },
+    {
+      "fixture": "tests/parity/num_100.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0205c1e0220e1afc4b7030b299f3e615b1de2716e46362dff4846f0e9203e4e4",
+      "rust_stdout_sha256": "0205c1e0220e1afc4b7030b299f3e615b1de2716e46362dff4846f0e9203e4e4"
+    },
+    {
+      "fixture": "tests/parity/num_123_456e_minus789.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "69f06a577245cba75c3fe4fbe1ed8e9246fc28895a57092efd2a15b259e5a786",
+      "rust_stdout_sha256": "69f06a577245cba75c3fe4fbe1ed8e9246fc28895a57092efd2a15b259e5a786"
+    },
+    {
+      "fixture": "tests/parity/num_12_5.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4d40a8018c250abf9ba333b2d5b1f7436feee2322925d96266330266725db8c9",
+      "rust_stdout_sha256": "4d40a8018c250abf9ba333b2d5b1f7436feee2322925d96266330266725db8c9"
+    },
+    {
+      "fixture": "tests/parity/num_1E2_plus.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "cd5f13bd5e2bc4bc2eeb4f33530aa20547ecae76e2541a25a294fbe644cd1011",
+      "rust_stdout_sha256": "cd5f13bd5e2bc4bc2eeb4f33530aa20547ecae76e2541a25a294fbe644cd1011"
+    },
+    {
+      "fixture": "tests/parity/num_1_0.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "227e70d8c0593791d1d543ec08aab7d57bf9bc6030ccbfedbdcf51c79ab09767",
+      "rust_stdout_sha256": "227e70d8c0593791d1d543ec08aab7d57bf9bc6030ccbfedbdcf51c79ab09767"
+    },
+    {
+      "fixture": "tests/parity/num_1_5e300.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "660b7e1d0150670ca0a821c6435582925953c8de270abbe06b04a6fee8b75131",
+      "rust_stdout_sha256": "660b7e1d0150670ca0a821c6435582925953c8de270abbe06b04a6fee8b75131"
+    },
+    {
+      "fixture": "tests/parity/num_1e15.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c2b87a4495e41b1cf134ad9b0a9ec80abe6751d22c0e05d6a5f121f5b967e850",
+      "rust_stdout_sha256": "c2b87a4495e41b1cf134ad9b0a9ec80abe6751d22c0e05d6a5f121f5b967e850"
+    },
+    {
+      "fixture": "tests/parity/num_1e16.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d17f1f31f691b848dd81cd90995b35d20e17e41c6ddd7ca5dc56d079f06f9c37",
+      "rust_stdout_sha256": "d17f1f31f691b848dd81cd90995b35d20e17e41c6ddd7ca5dc56d079f06f9c37"
+    },
+    {
+      "fixture": "tests/parity/num_1e17.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8a2e653d94c199f37910e47b3fe9dac851ce04b0a3e3f540d8dfa48ba89f9b6c",
+      "rust_stdout_sha256": "8a2e653d94c199f37910e47b3fe9dac851ce04b0a3e3f540d8dfa48ba89f9b6c"
+    },
+    {
+      "fixture": "tests/parity/num_1e2.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c5289f6326e8187c8f86e51cb122819f386e42cffd7ff9e54007b1e7f2adc8a5",
+      "rust_stdout_sha256": "c5289f6326e8187c8f86e51cb122819f386e42cffd7ff9e54007b1e7f2adc8a5"
+    },
+    {
+      "fixture": "tests/parity/num_1e20.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2165fbf55e78b8053635ad4eeb36d964a0d522fdc7085fc87b3358e61710cf4c",
+      "rust_stdout_sha256": "2165fbf55e78b8053635ad4eeb36d964a0d522fdc7085fc87b3358e61710cf4c"
+    },
+    {
+      "fixture": "tests/parity/num_1e21.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "248c1d4142cba7d60dcf616f80d623a9130e9285d72627324078e576f6cacf41",
+      "rust_stdout_sha256": "248c1d4142cba7d60dcf616f80d623a9130e9285d72627324078e576f6cacf41"
+    },
+    {
+      "fixture": "tests/parity/num_1e308.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d50b6747eeafe9d62848210adc62fb6569a44c79ad324e2c6ba5cc5d0daac183",
+      "rust_stdout_sha256": "d50b6747eeafe9d62848210adc62fb6569a44c79ad324e2c6ba5cc5d0daac183"
+    },
+    {
+      "fixture": "tests/parity/num_1e309.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "555846c840cf5bd2daad583b4a861acd517709f199394866bbcb8b1d70fa51fd",
+      "rust_stdout_sha256": "555846c840cf5bd2daad583b4a861acd517709f199394866bbcb8b1d70fa51fd"
+    },
+    {
+      "fixture": "tests/parity/num_1e_minus2.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f1fe51532239e3ed56915a795d1e8c5f83be96af28fbe627ee99ac575a57e36f",
+      "rust_stdout_sha256": "f1fe51532239e3ed56915a795d1e8c5f83be96af28fbe627ee99ac575a57e36f"
+    },
+    {
+      "fixture": "tests/parity/num_1e_minus400.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e586352a85d3ccbc19f4fb5bcbbadb2456f0b4ce07b2997a5d08531b560004c1",
+      "rust_stdout_sha256": "e586352a85d3ccbc19f4fb5bcbbadb2456f0b4ce07b2997a5d08531b560004c1"
+    },
+    {
+      "fixture": "tests/parity/num_1e_minus5.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8f82491a86da4ae78568164ac02106582dec7a98fd17cd94839cd17dbfe0b85f",
+      "rust_stdout_sha256": "8f82491a86da4ae78568164ac02106582dec7a98fd17cd94839cd17dbfe0b85f"
+    },
+    {
+      "fixture": "tests/parity/num_1e_minus7.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "db2f6c03e111d08a3667fd299a1c8afa6a7d59a6e88037044c1d8e508c6671e2",
+      "rust_stdout_sha256": "db2f6c03e111d08a3667fd299a1c8afa6a7d59a6e88037044c1d8e508c6671e2"
+    },
+    {
+      "fixture": "tests/parity/num_2_5.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8f2c6b25d4c02e1a4d3d0c7623c25ac85b7935eb9106e12be4eaab28e93c6324",
+      "rust_stdout_sha256": "8f2c6b25d4c02e1a4d3d0c7623c25ac85b7935eb9106e12be4eaab28e93c6324"
+    },
+    {
+      "fixture": "tests/parity/num_big_int_18.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "cf19d9c8ce2c72d92acc5683d58fe6d5782d4a0323d835835d093a2f8e523af4",
+      "rust_stdout_sha256": "cf19d9c8ce2c72d92acc5683d58fe6d5782d4a0323d835835d093a2f8e523af4"
+    },
+    {
+      "fixture": "tests/parity/num_big_int_40.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "088d0523d666e5fc1aa77f6d3b9f6f1706353bcb596a4e09b9dd9dce7198ef5c",
+      "rust_stdout_sha256": "088d0523d666e5fc1aa77f6d3b9f6f1706353bcb596a4e09b9dd9dce7198ef5c"
+    },
+    {
+      "fixture": "tests/parity/num_big_int_80.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4063f87b9d7188ad37ee6524cf0bc8bfc8783606000d6c8684da0c12cd260261",
+      "rust_stdout_sha256": "4063f87b9d7188ad37ee6524cf0bc8bfc8783606000d6c8684da0c12cd260261"
+    },
+    {
+      "fixture": "tests/parity/num_comma_decimal.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8bf85bb4a4d0bd5f9f97f8668c62da36cc89cf3fb077545120edd386cf3b3274",
+      "rust_stdout_sha256": "8bf85bb4a4d0bd5f9f97f8668c62da36cc89cf3fb077545120edd386cf3b3274"
+    },
+    {
+      "fixture": "tests/parity/num_dbl_max.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0ded975257f3cead426244e295f4d1b88b0fbb1a2c59fbc696c3702299c3c4e3",
+      "rust_stdout_sha256": "0ded975257f3cead426244e295f4d1b88b0fbb1a2c59fbc696c3702299c3c4e3"
+    },
+    {
+      "fixture": "tests/parity/num_dbl_min.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "766fdd9ed709a2530e59d4763b07e6a3be02f4dc9ba760212a7d6fe513eb23e0",
+      "rust_stdout_sha256": "766fdd9ed709a2530e59d4763b07e6a3be02f4dc9ba760212a7d6fe513eb23e0"
+    },
+    {
+      "fixture": "tests/parity/num_denorm_min.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8adbd54253fd2c0897ab406fc4ade6b0fc05ffb252a2f5c4544299801e1e4f97",
+      "rust_stdout_sha256": "8adbd54253fd2c0897ab406fc4ade6b0fc05ffb252a2f5c4544299801e1e4f97"
+    },
+    {
+      "fixture": "tests/parity/num_digits_17.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c541769b34b22c8557b91ab5d5a4b1b33abd768151f507495d67a9438a28a4d6",
+      "rust_stdout_sha256": "c541769b34b22c8557b91ab5d5a4b1b33abd768151f507495d67a9438a28a4d6"
+    },
+    {
+      "fixture": "tests/parity/num_dot_5.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e7a5b26de8c6e45f8d215bbe27f0cc454814cfb8fe8beab817d2ada87963359d",
+      "rust_stdout_sha256": "e7a5b26de8c6e45f8d215bbe27f0cc454814cfb8fe8beab817d2ada87963359d"
+    },
+    {
+      "fixture": "tests/parity/num_dot_5_neg.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d20f18f0c63c2a9ad3f55cd7004802b4ebf99358d619a3f238f5eeb9d34b173f",
+      "rust_stdout_sha256": "d20f18f0c63c2a9ad3f55cd7004802b4ebf99358d619a3f238f5eeb9d34b173f"
+    },
+    {
+      "fixture": "tests/parity/num_double_exp.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9ddde29f790eb7cc093fd57dfa3082b7c48f1d73bbfa7ba48b618324a5cced09",
+      "rust_stdout_sha256": "9ddde29f790eb7cc093fd57dfa3082b7c48f1d73bbfa7ba48b618324a5cced09"
+    },
+    {
+      "fixture": "tests/parity/num_exp_dot.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2722b0629dfb2d29e42dd87a91fdd6a796d187b08406deb089aad7226f28c1f3",
+      "rust_stdout_sha256": "2722b0629dfb2d29e42dd87a91fdd6a796d187b08406deb089aad7226f28c1f3"
+    },
+    {
+      "fixture": "tests/parity/num_exp_empty.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "80628a0279b9fac7a490d1fbf8408be7a6865e8c7b3327f9c30af30c6aa4aa39",
+      "rust_stdout_sha256": "80628a0279b9fac7a490d1fbf8408be7a6865e8c7b3327f9c30af30c6aa4aa39"
+    },
+    {
+      "fixture": "tests/parity/num_exp_minus_empty.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0b34e8d9629608f3e9856c96c85bbc17d1d66470cfd4bbe80bd05bd07ea86cea",
+      "rust_stdout_sha256": "0b34e8d9629608f3e9856c96c85bbc17d1d66470cfd4bbe80bd05bd07ea86cea"
+    },
+    {
+      "fixture": "tests/parity/num_exp_plus_empty.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "dc90b6a6e4cb684326a2d3408ed035a8fffe62e1e00f1a638a94dcaae0001355",
+      "rust_stdout_sha256": "dc90b6a6e4cb684326a2d3408ed035a8fffe62e1e00f1a638a94dcaae0001355"
+    },
+    {
+      "fixture": "tests/parity/num_frac_near_int.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f4d484752a56dffa3e3719353b12dd511e62ee00dda5f4a28ef23eaf44f2b395",
+      "rust_stdout_sha256": "f4d484752a56dffa3e3719353b12dd511e62ee00dda5f4a28ef23eaf44f2b395"
+    },
+    {
+      "fixture": "tests/parity/num_hex.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "97c64bb53ec41485c9908d7568b90de809de473f147710717867e79898152920",
+      "rust_stdout_sha256": "97c64bb53ec41485c9908d7568b90de809de473f147710717867e79898152920"
+    },
+    {
+      "fixture": "tests/parity/num_huge_exp.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "01d187134f95bc4e87639ea0eab66e52d350f3f02ccb3636d419e046b2735cfc",
+      "rust_stdout_sha256": "01d187134f95bc4e87639ea0eab66e52d350f3f02ccb3636d419e046b2735cfc"
+    },
+    {
+      "fixture": "tests/parity/num_in_array.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0d31e566fac16b811e2525c69976b904957b7e9f885350c8cadc0fc7fef8155c",
+      "rust_stdout_sha256": "0d31e566fac16b811e2525c69976b904957b7e9f885350c8cadc0fc7fef8155c"
+    },
+    {
+      "fixture": "tests/parity/num_inf_word.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7a2071d618ec805e8f7a8d34354afc7c07c920f64ce6cccfad85d01803a5cd04",
+      "rust_stdout_sha256": "7a2071d618ec805e8f7a8d34354afc7c07c920f64ce6cccfad85d01803a5cd04"
+    },
+    {
+      "fixture": "tests/parity/num_infinity_word.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "05e3d330a489ae2867404db589027670c8bedd724235ce772ba33c2ccc119cb3",
+      "rust_stdout_sha256": "05e3d330a489ae2867404db589027670c8bedd724235ce772ba33c2ccc119cb3"
+    },
+    {
+      "fixture": "tests/parity/num_int_as_float.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "159954b1798cbd66dce80159d7cf04e213ed2f30753985893de734badf35a94c",
+      "rust_stdout_sha256": "159954b1798cbd66dce80159d7cf04e213ed2f30753985893de734badf35a94c"
+    },
+    {
+      "fixture": "tests/parity/num_int_max.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c51c5e9e99a491dc6f3ff500ef29b77475e4cf948b996fb936afd7229b3c5890",
+      "rust_stdout_sha256": "c51c5e9e99a491dc6f3ff500ef29b77475e4cf948b996fb936afd7229b3c5890"
+    },
+    {
+      "fixture": "tests/parity/num_int_max_plus1.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7656ac6e5c06fea05477eebffa49e6002b6d4baba422c30e2f5bb9377393034a",
+      "rust_stdout_sha256": "7656ac6e5c06fea05477eebffa49e6002b6d4baba422c30e2f5bb9377393034a"
+    },
+    {
+      "fixture": "tests/parity/num_int_min.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ca6de0dc00e9b54b25c14bccf14f997f2027375df75bc06eb61fab0f97c1de49",
+      "rust_stdout_sha256": "ca6de0dc00e9b54b25c14bccf14f997f2027375df75bc06eb61fab0f97c1de49"
+    },
+    {
+      "fixture": "tests/parity/num_int_min_minus1.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4399a10d2de1f0fbe94e6d19dab263583f8d7f527f436016f23793d2b574bcf4",
+      "rust_stdout_sha256": "4399a10d2de1f0fbe94e6d19dab263583f8d7f527f436016f23793d2b574bcf4"
+    },
+    {
+      "fixture": "tests/parity/num_leading_zero.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "92c0f730f42eaf4bfa840259fed5bb30c18767017f956069301ba8973b29405a",
+      "rust_stdout_sha256": "92c0f730f42eaf4bfa840259fed5bb30c18767017f956069301ba8973b29405a"
+    },
+    {
+      "fixture": "tests/parity/num_leading_zeros.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "18ce378877c5bc3584dc551d525b57ed377ff06264c38883b19a835793d2c2a0",
+      "rust_stdout_sha256": "18ce378877c5bc3584dc551d525b57ed377ff06264c38883b19a835793d2c2a0"
+    },
+    {
+      "fixture": "tests/parity/num_long_mantissa_70.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "04bde92a4a0404a02a3aec19bac77af1de8e377dcb152c3ba35a348f0ae8694c",
+      "rust_stdout_sha256": "04bde92a4a0404a02a3aec19bac77af1de8e377dcb152c3ba35a348f0ae8694c"
+    },
+    {
+      "fixture": "tests/parity/num_max_safe_frac.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e1b519264f77d1c88596939e9d36a9156e52fbd9b3ae356fe17cf6534f41c672",
+      "rust_stdout_sha256": "e1b519264f77d1c88596939e9d36a9156e52fbd9b3ae356fe17cf6534f41c672"
+    },
+    {
+      "fixture": "tests/parity/num_minus_minus_one.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0f38241985dbdfa5dd50587269b9a400708a1685b63bd47623bf8ba8115486d9",
+      "rust_stdout_sha256": "0f38241985dbdfa5dd50587269b9a400708a1685b63bd47623bf8ba8115486d9"
+    },
+    {
+      "fixture": "tests/parity/num_minus_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5cd4b8868e36020c968cad36e93922148db2c4876b85c77b8805b4490b309c93",
+      "rust_stdout_sha256": "5cd4b8868e36020c968cad36e93922148db2c4876b85c77b8805b4490b309c93"
+    },
+    {
+      "fixture": "tests/parity/num_nan_word.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "63e61dc838ce696754d80c286f513c784e0158d1c2f614dd2e22caaa65a6f42a",
+      "rust_stdout_sha256": "63e61dc838ce696754d80c286f513c784e0158d1c2f614dd2e22caaa65a6f42a"
+    },
+    {
+      "fixture": "tests/parity/num_neg_12_5e_minus3.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2d4a15ab6660b403809c624e4e32c449fe297cc3a835acb36fcafa846d6cd6db",
+      "rust_stdout_sha256": "2d4a15ab6660b403809c624e4e32c449fe297cc3a835acb36fcafa846d6cd6db"
+    },
+    {
+      "fixture": "tests/parity/num_neg_1e309.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e771de67391a5a014028b868daad02e5865328c15a19928c3c28b737837544f9",
+      "rust_stdout_sha256": "e771de67391a5a014028b868daad02e5865328c15a19928c3c28b737837544f9"
+    },
+    {
+      "fixture": "tests/parity/num_neg_frac.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "38357debc668871144ad671be53621febf6d15225b2813fa2a4e8d81ee5cb766",
+      "rust_stdout_sha256": "38357debc668871144ad671be53621febf6d15225b2813fa2a4e8d81ee5cb766"
+    },
+    {
+      "fixture": "tests/parity/num_neg_infinity_word.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6d164f20465adb8e06a92559138dd9949dc732a0ac4021e1b1872d6b2195ab7d",
+      "rust_stdout_sha256": "6d164f20465adb8e06a92559138dd9949dc732a0ac4021e1b1872d6b2195ab7d"
+    },
+    {
+      "fixture": "tests/parity/num_neg_one.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8a255210404fd1dd90e6144eae225ef779298fec069e66c142b5b938f9565eab",
+      "rust_stdout_sha256": "8a255210404fd1dd90e6144eae225ef779298fec069e66c142b5b938f9565eab"
+    },
+    {
+      "fixture": "tests/parity/num_neg_zero.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "02db1ddd42e8084989814ce33acc92511f74048cfc86fc0aada967a9c6d9ae28",
+      "rust_stdout_sha256": "02db1ddd42e8084989814ce33acc92511f74048cfc86fc0aada967a9c6d9ae28"
+    },
+    {
+      "fixture": "tests/parity/num_neg_zero_frac.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c9ae86a0a6f2abac0fab72f27084b356a983673605664130f576c16ae0912e41",
+      "rust_stdout_sha256": "c9ae86a0a6f2abac0fab72f27084b356a983673605664130f576c16ae0912e41"
+    },
+    {
+      "fixture": "tests/parity/num_one.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1e8dad23c3799ef9d8d78023b3ef3c017ec91567a079be58a1cb3659772c6bf2",
+      "rust_stdout_sha256": "1e8dad23c3799ef9d8d78023b3ef3c017ec91567a079be58a1cb3659772c6bf2"
+    },
+    {
+      "fixture": "tests/parity/num_padded.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f48764d78a2918094f42311f3461daabcfa90198dcc0607811a2d6ffffa874ae",
+      "rust_stdout_sha256": "f48764d78a2918094f42311f3461daabcfa90198dcc0607811a2d6ffffa874ae"
+    },
+    {
+      "fixture": "tests/parity/num_pi.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "cf91af7f135de99fd7dccd1795c3ed0328049b66b6efa004925bd4c007094079",
+      "rust_stdout_sha256": "cf91af7f135de99fd7dccd1795c3ed0328049b66b6efa004925bd4c007094079"
+    },
+    {
+      "fixture": "tests/parity/num_pi_long.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d73ceed061e42b69093e81e6b382524214f522cfd3da99c2be256c847b70bdc0",
+      "rust_stdout_sha256": "d73ceed061e42b69093e81e6b382524214f522cfd3da99c2be256c847b70bdc0"
+    },
+    {
+      "fixture": "tests/parity/num_plus_one.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "bc266a5a8f9fbe991772d29127dab182efa2062a994d1552ab970e1bc3d25ede",
+      "rust_stdout_sha256": "bc266a5a8f9fbe991772d29127dab182efa2062a994d1552ab970e1bc3d25ede"
+    },
+    {
+      "fixture": "tests/parity/num_space_inside.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "aa92d28d48302964f876415b6f26deac06853d34ac67854e880479bd21514a37",
+      "rust_stdout_sha256": "aa92d28d48302964f876415b6f26deac06853d34ac67854e880479bd21514a37"
+    },
+    {
+      "fixture": "tests/parity/num_third.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8e43baad0d850687f9b0edd713be0090fe5640a2b638ec48243dfaea9b0dd6e0",
+      "rust_stdout_sha256": "8e43baad0d850687f9b0edd713be0090fe5640a2b638ec48243dfaea9b0dd6e0"
+    },
+    {
+      "fixture": "tests/parity/num_tiny_exp.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7d521d6279ebbdb7fe7d943271870f86e4791f11f3410fd51bb4f29c8ff578b5",
+      "rust_stdout_sha256": "7d521d6279ebbdb7fe7d943271870f86e4791f11f3410fd51bb4f29c8ff578b5"
+    },
+    {
+      "fixture": "tests/parity/num_trailing_dot.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ef67504d0bcfeac34fdb82abd80fdfdddda146ce2fe2562e0f2ed978e6580be0",
+      "rust_stdout_sha256": "ef67504d0bcfeac34fdb82abd80fdfdddda146ce2fe2562e0f2ed978e6580be0"
+    },
+    {
+      "fixture": "tests/parity/num_trailing_letters.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "06895d7d2f8d5744c92a22c473b4e43e7ec4d501a9d5a86afd910b466069031a",
+      "rust_stdout_sha256": "06895d7d2f8d5744c92a22c473b4e43e7ec4d501a9d5a86afd910b466069031a"
+    },
+    {
+      "fixture": "tests/parity/num_two_dots.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "47c433b12f2f48e4297d1d728efd3c9cc6acfa0750a6cde32f7e058fc319cfbd",
+      "rust_stdout_sha256": "47c433b12f2f48e4297d1d728efd3c9cc6acfa0750a6cde32f7e058fc319cfbd"
+    },
+    {
+      "fixture": "tests/parity/num_two_pow_53.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "34ed054fab7b26570a1268a456dbed54d371889c567dd90afbce28b2208768bd",
+      "rust_stdout_sha256": "34ed054fab7b26570a1268a456dbed54d371889c567dd90afbce28b2208768bd"
+    },
+    {
+      "fixture": "tests/parity/num_two_pow_53_plus1.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "efc7ca84a45c850efc3d527f1c79a799c42ac33d8f23c3b42837cc9620cdd24d",
+      "rust_stdout_sha256": "efc7ca84a45c850efc3d527f1c79a799c42ac33d8f23c3b42837cc9620cdd24d"
+    },
+    {
+      "fixture": "tests/parity/num_uint64_max.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "77d467e5c489d84bf3971faa1663a82b40b134e5a894f957aee61b19f75712af",
+      "rust_stdout_sha256": "77d467e5c489d84bf3971faa1663a82b40b134e5a894f957aee61b19f75712af"
+    },
+    {
+      "fixture": "tests/parity/num_upper_E5.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "61f01bd1b47d7a18025e7d4bae4ba95b2160f696c025d4478a02a9e00ea83885",
+      "rust_stdout_sha256": "61f01bd1b47d7a18025e7d4bae4ba95b2160f696c025d4478a02a9e00ea83885"
+    },
+    {
+      "fixture": "tests/parity/num_valueint_saturate.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f1d81bfc0743b31ab10791baf74c3ea09bb13fa07deaae4f0c85d4d6d0828a22",
+      "rust_stdout_sha256": "f1d81bfc0743b31ab10791baf74c3ea09bb13fa07deaae4f0c85d4d6d0828a22"
+    },
+    {
+      "fixture": "tests/parity/num_zero.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b1f7c8cc716d6d03738b2418b0b0053bc38de9946089056dce45dd38b6d11947",
+      "rust_stdout_sha256": "b1f7c8cc716d6d03738b2418b0b0053bc38de9946089056dce45dd38b6d11947"
+    },
+    {
+      "fixture": "tests/parity/obj_all_types.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "845befb05ab590dafdc55e9abd231ecf8b53d09e3c1e526718de7982beb71476",
+      "rust_stdout_sha256": "845befb05ab590dafdc55e9abd231ecf8b53d09e3c1e526718de7982beb71476"
+    },
+    {
+      "fixture": "tests/parity/obj_array_value_garbage.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "98bac142c8578520176ea64f26726f2b7337f16fb4a03cad2eee15181da8ea0c",
+      "rust_stdout_sha256": "98bac142c8578520176ea64f26726f2b7337f16fb4a03cad2eee15181da8ea0c"
+    },
+    {
+      "fixture": "tests/parity/obj_bare_key.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5f9a9309efc22ff65c0bb86df0a07d0d9d16c309d329181209829fece0d3427a",
+      "rust_stdout_sha256": "5f9a9309efc22ff65c0bb86df0a07d0d9d16c309d329181209829fece0d3427a"
+    },
+    {
+      "fixture": "tests/parity/obj_case_variant_keys.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "57756e2e4957b5d1d3849c7163e2b3049a6834f8ff4c2a723ed6ffdd65d48a34",
+      "rust_stdout_sha256": "57756e2e4957b5d1d3849c7163e2b3049a6834f8ff4c2a723ed6ffdd65d48a34"
+    },
+    {
+      "fixture": "tests/parity/obj_case_variant_keys_3.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ade7b913a473b5bc3b659bf3f8de64f0567b370802f10ff001e0f9372e8743a9",
+      "rust_stdout_sha256": "ade7b913a473b5bc3b659bf3f8de64f0567b370802f10ff001e0f9372e8743a9"
+    },
+    {
+      "fixture": "tests/parity/obj_case_variant_values.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d041a1ff6e5b91f59fb3c7f27011642772a765b57351230343614fcd66a8569d",
+      "rust_stdout_sha256": "d041a1ff6e5b91f59fb3c7f27011642772a765b57351230343614fcd66a8569d"
+    },
+    {
+      "fixture": "tests/parity/obj_close_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "cb15e6ff9c6a2f1e275eb32511876abf485200333e1caa47d06f5e781f6db505",
+      "rust_stdout_sha256": "cb15e6ff9c6a2f1e275eb32511876abf485200333e1caa47d06f5e781f6db505"
+    },
+    {
+      "fixture": "tests/parity/obj_colon_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "37b6e9a6cdbfa26bfc26e88fe4cef71e2bf5a7a7241a8ffdcc7bb6597cc89169",
+      "rust_stdout_sha256": "37b6e9a6cdbfa26bfc26e88fe4cef71e2bf5a7a7241a8ffdcc7bb6597cc89169"
+    },
+    {
+      "fixture": "tests/parity/obj_comma_first.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2c16110c522f93aa9ee9fe20123a220187d92ff90e185fab91dd4fddbed524bf",
+      "rust_stdout_sha256": "2c16110c522f93aa9ee9fe20123a220187d92ff90e185fab91dd4fddbed524bf"
+    },
+    {
+      "fixture": "tests/parity/obj_ctrl_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "887f94ed317c8f9e920e8f7ce3e08d65ddeab359b613b437593094e201e59bb3",
+      "rust_stdout_sha256": "887f94ed317c8f9e920e8f7ce3e08d65ddeab359b613b437593094e201e59bb3"
+    },
+    {
+      "fixture": "tests/parity/obj_double_colon.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "536e570e6834c5bd2ef796ab04a7804504246fe2a60172f7ff4447ae164782e4",
+      "rust_stdout_sha256": "536e570e6834c5bd2ef796ab04a7804504246fe2a60172f7ff4447ae164782e4"
+    },
+    {
+      "fixture": "tests/parity/obj_duplicate_keys.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "77bee59807e3a097ea0770913c1ff0c778af93a877f0f03765b5f4554a2773dc",
+      "rust_stdout_sha256": "77bee59807e3a097ea0770913c1ff0c778af93a877f0f03765b5f4554a2773dc"
+    },
+    {
+      "fixture": "tests/parity/obj_duplicate_keys_nested.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6a7328ee3dcc65131d0c2a16c6cfd4feebfb01d0548eb263e7aac160755eb247",
+      "rust_stdout_sha256": "6a7328ee3dcc65131d0c2a16c6cfd4feebfb01d0548eb263e7aac160755eb247"
+    },
+    {
+      "fixture": "tests/parity/obj_empty.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "110b8994fabe090180288651857ba611a3a5c19c9ac368f4255e084a9849a41e",
+      "rust_stdout_sha256": "110b8994fabe090180288651857ba611a3a5c19c9ac368f4255e084a9849a41e"
+    },
+    {
+      "fixture": "tests/parity/obj_empty_key.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "13268332b73c4c282a1f2342f3f8bfb7b23aa3954ca220d59f3477f63acbeead",
+      "rust_stdout_sha256": "13268332b73c4c282a1f2342f3f8bfb7b23aa3954ca220d59f3477f63acbeead"
+    },
+    {
+      "fixture": "tests/parity/obj_empty_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f8765f3102b0e4f8b99cc9119410eb79ac759b811d2acfd2d7367d0a5475e540",
+      "rust_stdout_sha256": "f8765f3102b0e4f8b99cc9119410eb79ac759b811d2acfd2d7367d0a5475e540"
+    },
+    {
+      "fixture": "tests/parity/obj_escaped_key.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f04cef4e0988471653001a3675d0ccc627aaa7cdf994b9b3d7fb9f0a9526f1c8",
+      "rust_stdout_sha256": "f04cef4e0988471653001a3675d0ccc627aaa7cdf994b9b3d7fb9f0a9526f1c8"
+    },
+    {
+      "fixture": "tests/parity/obj_key_bad_escape.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6c9991a4f06c77844a33d9d42960a35585d536f8c6e1d0d978379fce73c2304b",
+      "rust_stdout_sha256": "6c9991a4f06c77844a33d9d42960a35585d536f8c6e1d0d978379fce73c2304b"
+    },
+    {
+      "fixture": "tests/parity/obj_key_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c80f946257b7dca5cc983507e51e812d86d124e8fd44dcd09a210630986de3e3",
+      "rust_stdout_sha256": "c80f946257b7dca5cc983507e51e812d86d124e8fd44dcd09a210630986de3e3"
+    },
+    {
+      "fixture": "tests/parity/obj_key_u0000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8381f4614f353bd140f8c7275ebbaa0881a84b20a15dd4d02e79854629c592a2",
+      "rust_stdout_sha256": "8381f4614f353bd140f8c7275ebbaa0881a84b20a15dd4d02e79854629c592a2"
+    },
+    {
+      "fixture": "tests/parity/obj_many_keys.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "44cf552400fe25cbc816237d9a4f3421087f82c749e2d453600e8eff906294f0",
+      "rust_stdout_sha256": "44cf552400fe25cbc816237d9a4f3421087f82c749e2d453600e8eff906294f0"
+    },
+    {
+      "fixture": "tests/parity/obj_mismatched.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "343edda86701e7b3bc46effff3beec26213ffd951f98c06e89027d0113c4ecdf",
+      "rust_stdout_sha256": "343edda86701e7b3bc46effff3beec26213ffd951f98c06e89027d0113c4ecdf"
+    },
+    {
+      "fixture": "tests/parity/obj_missing_colon.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "130f6ef2a9c75df1315b5e2f9eabb3b9b243a5a09caf1db10c691afda36d1192",
+      "rust_stdout_sha256": "130f6ef2a9c75df1315b5e2f9eabb3b9b243a5a09caf1db10c691afda36d1192"
+    },
+    {
+      "fixture": "tests/parity/obj_missing_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8ca370ba6487436d76195d7762545b96b0d62a57304753998e4968a44937f8cf",
+      "rust_stdout_sha256": "8ca370ba6487436d76195d7762545b96b0d62a57304753998e4968a44937f8cf"
+    },
+    {
+      "fixture": "tests/parity/obj_missing_value.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "59680ee56f531460b24d6dac922fc8e5d4e7793a66ced1b7fced340154cc7a5a",
+      "rust_stdout_sha256": "59680ee56f531460b24d6dac922fc8e5d4e7793a66ced1b7fced340154cc7a5a"
+    },
+    {
+      "fixture": "tests/parity/obj_nested.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8f98b46d90b58d52dd6ea7487f6f93d1d9107310ebb289bc17fa7f7789788888",
+      "rust_stdout_sha256": "8f98b46d90b58d52dd6ea7487f6f93d1d9107310ebb289bc17fa7f7789788888"
+    },
+    {
+      "fixture": "tests/parity/obj_non_string_key.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ba164b3a177e40bb27011aaa29fe0e9465cdf163b24bc6896c40234d852aff87",
+      "rust_stdout_sha256": "ba164b3a177e40bb27011aaa29fe0e9465cdf163b24bc6896c40234d852aff87"
+    },
+    {
+      "fixture": "tests/parity/obj_null_key.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a2f78144438e8b522b4048b0038902dc29991aa2a4cfe253baaf994c7eb0c22e",
+      "rust_stdout_sha256": "a2f78144438e8b522b4048b0038902dc29991aa2a4cfe253baaf994c7eb0c22e"
+    },
+    {
+      "fixture": "tests/parity/obj_simple.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4382af9618440469434cf2e7b3a0417438b3f33c30eaa9e0a6c80db9ded58424",
+      "rust_stdout_sha256": "4382af9618440469434cf2e7b3a0417438b3f33c30eaa9e0a6c80db9ded58424"
+    },
+    {
+      "fixture": "tests/parity/obj_single_quote_key.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d11b9576abe72d601451da1fc7eaa0f871cb67d4c20fd747d9dd579441ea56e9",
+      "rust_stdout_sha256": "d11b9576abe72d601451da1fc7eaa0f871cb67d4c20fd747d9dd579441ea56e9"
+    },
+    {
+      "fixture": "tests/parity/obj_trailing_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6496a3fbf45b6c92ba081261ff5bd26e85bfc02c2b5576db20e68d324a1efcb6",
+      "rust_stdout_sha256": "6496a3fbf45b6c92ba081261ff5bd26e85bfc02c2b5576db20e68d324a1efcb6"
+    },
+    {
+      "fixture": "tests/parity/obj_unclosed.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1135f28f916d67215798d502bbfc0d721c1925f6d3847c6cec27ff583525f20d",
+      "rust_stdout_sha256": "1135f28f916d67215798d502bbfc0d721c1925f6d3847c6cec27ff583525f20d"
+    },
+    {
+      "fixture": "tests/parity/obj_unclosed_after_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "42059ea91d0a15a52669a12773b10317cc8a1d459778fcaf6198296c2af023bb",
+      "rust_stdout_sha256": "42059ea91d0a15a52669a12773b10317cc8a1d459778fcaf6198296c2af023bb"
+    },
+    {
+      "fixture": "tests/parity/obj_unclosed_empty.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2cf83843d9dd890716426375c99249d28992d7f2c4bd33d8340ad23a3cb00c38",
+      "rust_stdout_sha256": "2cf83843d9dd890716426375c99249d28992d7f2c4bd33d8340ad23a3cb00c38"
+    },
+    {
+      "fixture": "tests/parity/obj_unclosed_key.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e7dd2edaed615439871c5abb54e7f70b57b228432afb6a11ea24c7a957c32b67",
+      "rust_stdout_sha256": "e7dd2edaed615439871c5abb54e7f70b57b228432afb6a11ea24c7a957c32b67"
+    },
+    {
+      "fixture": "tests/parity/obj_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b046370db79c37ec6273e8b3cb02f267ae2c8faed8968f581de0820d7280469b",
+      "rust_stdout_sha256": "b046370db79c37ec6273e8b3cb02f267ae2c8faed8968f581de0820d7280469b"
+    },
+    {
+      "fixture": "tests/parity/rnd_000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ebdf4bb385bb749f94a3bffc1561de005aa35a8926e85f54b9477a222327ce7c",
+      "rust_stdout_sha256": "ebdf4bb385bb749f94a3bffc1561de005aa35a8926e85f54b9477a222327ce7c"
+    },
+    {
+      "fixture": "tests/parity/rnd_001.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8cbf2934b0726dfdf8bf5bded816bd440ce6672dbef88114c4ac9d39ab9d851e",
+      "rust_stdout_sha256": "8cbf2934b0726dfdf8bf5bded816bd440ce6672dbef88114c4ac9d39ab9d851e"
+    },
+    {
+      "fixture": "tests/parity/rnd_002.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a79ff6ffebbb4b29486fd54c280c257060cef5c5027db40a7036cf708576cb2d",
+      "rust_stdout_sha256": "a79ff6ffebbb4b29486fd54c280c257060cef5c5027db40a7036cf708576cb2d"
+    },
+    {
+      "fixture": "tests/parity/rnd_003.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b8eb9cb2207b3b5b26c87e65bad75b7e07898124982a217edf2b09aab87a1436",
+      "rust_stdout_sha256": "b8eb9cb2207b3b5b26c87e65bad75b7e07898124982a217edf2b09aab87a1436"
+    },
+    {
+      "fixture": "tests/parity/rnd_004.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8bb41785981825af3896fbb9aea0fc97e95c3b92bb6e81833b9a77d6f0e53b6d",
+      "rust_stdout_sha256": "8bb41785981825af3896fbb9aea0fc97e95c3b92bb6e81833b9a77d6f0e53b6d"
+    },
+    {
+      "fixture": "tests/parity/rnd_005.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ed3e5f08c2aa9e870a93d3bd4d4002d94491aa08d20e299e277d9507202c7388",
+      "rust_stdout_sha256": "ed3e5f08c2aa9e870a93d3bd4d4002d94491aa08d20e299e277d9507202c7388"
+    },
+    {
+      "fixture": "tests/parity/rnd_006.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3bc1752eae919b15495be5110a5323b6a78cce47585b4b775c14e2143d0bcfd4",
+      "rust_stdout_sha256": "3bc1752eae919b15495be5110a5323b6a78cce47585b4b775c14e2143d0bcfd4"
+    },
+    {
+      "fixture": "tests/parity/rnd_007.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "18f01ec878848a1290e9571a3bd459ac601080f2a98335fc7b793ae4bc298ba6",
+      "rust_stdout_sha256": "18f01ec878848a1290e9571a3bd459ac601080f2a98335fc7b793ae4bc298ba6"
+    },
+    {
+      "fixture": "tests/parity/rnd_008.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b688a616aa1b4343ffb72f5bc90decc699737a9bd860d8553b9b5851bd9b8aa8",
+      "rust_stdout_sha256": "b688a616aa1b4343ffb72f5bc90decc699737a9bd860d8553b9b5851bd9b8aa8"
+    },
+    {
+      "fixture": "tests/parity/rnd_009.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "83dbed63a8dfee91f2a64f102e8f24798f50d9d66e17111e6320ee5bc24d8c21",
+      "rust_stdout_sha256": "83dbed63a8dfee91f2a64f102e8f24798f50d9d66e17111e6320ee5bc24d8c21"
+    },
+    {
+      "fixture": "tests/parity/rnd_010.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "646ab4f8ec0b7c03e1c1bcf33e526b92f8d281a8e98e536f8a889b7ad7fdc362",
+      "rust_stdout_sha256": "646ab4f8ec0b7c03e1c1bcf33e526b92f8d281a8e98e536f8a889b7ad7fdc362"
+    },
+    {
+      "fixture": "tests/parity/rnd_011.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "77e8e2b471a11098d146cac5c66515b9bd60782eebc10c9858b3703f8049b552",
+      "rust_stdout_sha256": "77e8e2b471a11098d146cac5c66515b9bd60782eebc10c9858b3703f8049b552"
+    },
+    {
+      "fixture": "tests/parity/rnd_012.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "625544e1cd30ca7d1e282f374dc4a556672830efdd03be6439ad0ad9982173ea",
+      "rust_stdout_sha256": "625544e1cd30ca7d1e282f374dc4a556672830efdd03be6439ad0ad9982173ea"
+    },
+    {
+      "fixture": "tests/parity/rnd_013.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6ab0ce5557c96e20dde59bcd1a221b71f4715220186218a8d1bf03b86d848673",
+      "rust_stdout_sha256": "6ab0ce5557c96e20dde59bcd1a221b71f4715220186218a8d1bf03b86d848673"
+    },
+    {
+      "fixture": "tests/parity/rnd_014.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9991b850ca158a5f77589897cb6cb666caaf62870289646e3602f9c67acd46ee",
+      "rust_stdout_sha256": "9991b850ca158a5f77589897cb6cb666caaf62870289646e3602f9c67acd46ee"
+    },
+    {
+      "fixture": "tests/parity/rnd_015.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "511c92dc46612c605f5c9394e6f7f747cfe01e56a381f0c295c58161a688aa14",
+      "rust_stdout_sha256": "511c92dc46612c605f5c9394e6f7f747cfe01e56a381f0c295c58161a688aa14"
+    },
+    {
+      "fixture": "tests/parity/rnd_016.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "aacc8f0e914ce181fdc149d2ac0b03b0419fe4044af497910c1a4e979c30aafe",
+      "rust_stdout_sha256": "aacc8f0e914ce181fdc149d2ac0b03b0419fe4044af497910c1a4e979c30aafe"
+    },
+    {
+      "fixture": "tests/parity/rnd_017.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c2d9b57621a80e4bb966a17642adb5ba565d98e5e88a288aa133d116fc5a02f9",
+      "rust_stdout_sha256": "c2d9b57621a80e4bb966a17642adb5ba565d98e5e88a288aa133d116fc5a02f9"
+    },
+    {
+      "fixture": "tests/parity/rnd_018.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3f5779449404a7ecbb8b344049ee07f6b6f077c13552f5ff5155caffb491e7f6",
+      "rust_stdout_sha256": "3f5779449404a7ecbb8b344049ee07f6b6f077c13552f5ff5155caffb491e7f6"
+    },
+    {
+      "fixture": "tests/parity/rnd_019.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9039a1ca28de25d1cf460fa13e2c971fbb64381270914d993947444b91e2b978",
+      "rust_stdout_sha256": "9039a1ca28de25d1cf460fa13e2c971fbb64381270914d993947444b91e2b978"
+    },
+    {
+      "fixture": "tests/parity/rnd_020.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "70292b96c071dd5629083169cd02761aa99ee541c97c7a417e6b9b1a949bd12b",
+      "rust_stdout_sha256": "70292b96c071dd5629083169cd02761aa99ee541c97c7a417e6b9b1a949bd12b"
+    },
+    {
+      "fixture": "tests/parity/rnd_021.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f14258d175771e82eb3ea8d66065a0a8ac24a28c2b24aca96ca8d36d823dfeb3",
+      "rust_stdout_sha256": "f14258d175771e82eb3ea8d66065a0a8ac24a28c2b24aca96ca8d36d823dfeb3"
+    },
+    {
+      "fixture": "tests/parity/rnd_022.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "aa9b9a0a8c990238f0fee65aca63f371918d024dfd52a23097310483ca725f81",
+      "rust_stdout_sha256": "aa9b9a0a8c990238f0fee65aca63f371918d024dfd52a23097310483ca725f81"
+    },
+    {
+      "fixture": "tests/parity/rnd_023.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "385013c9680de075b3263da6c29d2e4efa0a0dd26fa395029fbdeb93a1a40995",
+      "rust_stdout_sha256": "385013c9680de075b3263da6c29d2e4efa0a0dd26fa395029fbdeb93a1a40995"
+    },
+    {
+      "fixture": "tests/parity/rnd_024.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6a17657e45bac0d5c910df57ebb1a73251d8f2db7a9e74b9d484489e1c3fcc7c",
+      "rust_stdout_sha256": "6a17657e45bac0d5c910df57ebb1a73251d8f2db7a9e74b9d484489e1c3fcc7c"
+    },
+    {
+      "fixture": "tests/parity/rnd_025.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "27f67d35ca1c4c28c27a10c01850c4a21a8ee7fb135b962e2507ba5c545f4d9e",
+      "rust_stdout_sha256": "27f67d35ca1c4c28c27a10c01850c4a21a8ee7fb135b962e2507ba5c545f4d9e"
+    },
+    {
+      "fixture": "tests/parity/rnd_026.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "0d941836da28843cc23bd9a7532bbdd65f92ff152380269f7e1360f8a4592e43",
+      "rust_stdout_sha256": "0d941836da28843cc23bd9a7532bbdd65f92ff152380269f7e1360f8a4592e43"
+    },
+    {
+      "fixture": "tests/parity/rnd_027.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "567ed090898d80835dc577a2493d021660b54e090751dfa0f64ff3718436df4a",
+      "rust_stdout_sha256": "567ed090898d80835dc577a2493d021660b54e090751dfa0f64ff3718436df4a"
+    },
+    {
+      "fixture": "tests/parity/rnd_028.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "36b45d540bd05d9e3ae6375de614a06fd0aa51505299f5138dfe0899109cb7fc",
+      "rust_stdout_sha256": "36b45d540bd05d9e3ae6375de614a06fd0aa51505299f5138dfe0899109cb7fc"
+    },
+    {
+      "fixture": "tests/parity/rnd_029.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "55c9a29419a7bc41161291fe05769eab3afa73c5fd2a31cd2f43302b8377c0d9",
+      "rust_stdout_sha256": "55c9a29419a7bc41161291fe05769eab3afa73c5fd2a31cd2f43302b8377c0d9"
+    },
+    {
+      "fixture": "tests/parity/str_all_control_escaped.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1d5af643c82b4670cc0948e297efb5e037531aa6a0acdec7a2b924d776c8c3b2",
+      "rust_stdout_sha256": "1d5af643c82b4670cc0948e297efb5e037531aa6a0acdec7a2b924d776c8c3b2"
+    },
+    {
+      "fixture": "tests/parity/str_all_escapes.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b4d1380e51003bf4d245dde45804835553718ee9db7410df9ad5a43d2dc4964c",
+      "rust_stdout_sha256": "b4d1380e51003bf4d245dde45804835553718ee9db7410df9ad5a43d2dc4964c"
+    },
+    {
+      "fixture": "tests/parity/str_backslash_eof.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "63033fcf9622071a8d3c57e44b7f56c8a02eea94997fd66ac6afd56efa4c45a0",
+      "rust_stdout_sha256": "63033fcf9622071a8d3c57e44b7f56c8a02eea94997fd66ac6afd56efa4c45a0"
+    },
+    {
+      "fixture": "tests/parity/str_backslash_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3d88045fdf48004d42ac57cb2d1a3f8d7f02fd43fa41c5f7e85f55e9e93c351d",
+      "rust_stdout_sha256": "3d88045fdf48004d42ac57cb2d1a3f8d7f02fd43fa41c5f7e85f55e9e93c351d"
+    },
+    {
+      "fixture": "tests/parity/str_bad_hex.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "045a59837a00df23450681670ebcaed7d62f8b02031ac7f5df672d3ea078bcb4",
+      "rust_stdout_sha256": "045a59837a00df23450681670ebcaed7d62f8b02031ac7f5df672d3ea078bcb4"
+    },
+    {
+      "fixture": "tests/parity/str_bad_hex_first.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "613d40200b53a05b5e2a4eb1f2075e55cc7d296a7e6fb2d520190431ade00583",
+      "rust_stdout_sha256": "613d40200b53a05b5e2a4eb1f2075e55cc7d296a7e6fb2d520190431ade00583"
+    },
+    {
+      "fixture": "tests/parity/str_empty.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a436b273803ea5cc659e2f907001e80cd5e02f16b46c876b5606b8c3855aa621",
+      "rust_stdout_sha256": "a436b273803ea5cc659e2f907001e80cd5e02f16b46c876b5606b8c3855aa621"
+    },
+    {
+      "fixture": "tests/parity/str_escaped_backslash_end.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b933aa9613c54f364667c256fc07b722bce74a00ac4cc3d71981c1518bebcab9",
+      "rust_stdout_sha256": "b933aa9613c54f364667c256fc07b722bce74a00ac4cc3d71981c1518bebcab9"
+    },
+    {
+      "fixture": "tests/parity/str_escaped_quote.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a132ffdb329c35017d62149fb583cc10e3fd826cac34ea746e3ac34726e619e7",
+      "rust_stdout_sha256": "a132ffdb329c35017d62149fb583cc10e3fd826cac34ea746e3ac34726e619e7"
+    },
+    {
+      "fixture": "tests/parity/str_high_then_escape_n.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a692fc8943d2e84a19499b926b91ba6361d5cab7a23ba0408fea03d5799fad7d",
+      "rust_stdout_sha256": "a692fc8943d2e84a19499b926b91ba6361d5cab7a23ba0408fea03d5799fad7d"
+    },
+    {
+      "fixture": "tests/parity/str_high_then_high.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a597a719ed294fb45aa938df15c234423ed92a9dcc1af365374a9adffe0fa74f",
+      "rust_stdout_sha256": "a597a719ed294fb45aa938df15c234423ed92a9dcc1af365374a9adffe0fa74f"
+    },
+    {
+      "fixture": "tests/parity/str_high_then_nonlow.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ed63c1d22fecfd3448fe4bd647851ea584ed86b6a9a978d1cf6df38d33a9228e",
+      "rust_stdout_sha256": "ed63c1d22fecfd3448fe4bd647851ea584ed86b6a9a978d1cf6df38d33a9228e"
+    },
+    {
+      "fixture": "tests/parity/str_high_then_truncated.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d6f23335b73b31a713ec8d8f151d61fe8fbd35681ea9acf0bb7bcc2b24a8156d",
+      "rust_stdout_sha256": "d6f23335b73b31a713ec8d8f151d61fe8fbd35681ea9acf0bb7bcc2b24a8156d"
+    },
+    {
+      "fixture": "tests/parity/str_in_array.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4ee4859f4539767ca798e3755a1571c3915e3e71a3411249eb8c943256b0102c",
+      "rust_stdout_sha256": "4ee4859f4539767ca798e3755a1571c3915e3e71a3411249eb8c943256b0102c"
+    },
+    {
+      "fixture": "tests/parity/str_invalid_escape_a.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "559a06c2b16b77eb23c656b18c8260350f174ad82d8f80760bc6b72f65b1b50d",
+      "rust_stdout_sha256": "559a06c2b16b77eb23c656b18c8260350f174ad82d8f80760bc6b72f65b1b50d"
+    },
+    {
+      "fixture": "tests/parity/str_invalid_escape_quote_single.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "cf7c26063e43d241406d545408f3b68e01c9b42f3bf8d3116612f788afb13b68",
+      "rust_stdout_sha256": "cf7c26063e43d241406d545408f3b68e01c9b42f3bf8d3116612f788afb13b68"
+    },
+    {
+      "fixture": "tests/parity/str_invalid_escape_x.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "654f06897e1f99df19b53c8d8c65c431fc0e0a36678406bdc1ae9c7c31fbf949",
+      "rust_stdout_sha256": "654f06897e1f99df19b53c8d8c65c431fc0e0a36678406bdc1ae9c7c31fbf949"
+    },
+    {
+      "fixture": "tests/parity/str_invalid_utf8_continuation.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ccf4bcf5367b606b6e1319580a2c61a0f88e2735d1e4ba8b69bcd279db2c59cc",
+      "rust_stdout_sha256": "ccf4bcf5367b606b6e1319580a2c61a0f88e2735d1e4ba8b69bcd279db2c59cc"
+    },
+    {
+      "fixture": "tests/parity/str_invalid_utf8_ff_fe.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "85afa1d8b24c9fdad45029d8e0ad663e179ce0f258624a98e51909cad8e17e2f",
+      "rust_stdout_sha256": "85afa1d8b24c9fdad45029d8e0ad663e179ce0f258624a98e51909cad8e17e2f"
+    },
+    {
+      "fixture": "tests/parity/str_invalid_utf8_overlong.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2a947de0e3f5b620f3593a272cdddca93b048cf1a9a465ade55ab8cb81a1c012",
+      "rust_stdout_sha256": "2a947de0e3f5b620f3593a272cdddca93b048cf1a9a465ade55ab8cb81a1c012"
+    },
+    {
+      "fixture": "tests/parity/str_invalid_utf8_truncated.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5529484465e992a4b533c549f687483b802c67d1812dc1a5e56f0fbf6a9512e6",
+      "rust_stdout_sha256": "5529484465e992a4b533c549f687483b802c67d1812dc1a5e56f0fbf6a9512e6"
+    },
+    {
+      "fixture": "tests/parity/str_key_raw_utf8.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "cf249116ae4ded9c473a06451e1f067d33a8831915f254de7732b6dcfaa3d8b5",
+      "rust_stdout_sha256": "cf249116ae4ded9c473a06451e1f067d33a8831915f254de7732b6dcfaa3d8b5"
+    },
+    {
+      "fixture": "tests/parity/str_key_unicode.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4f1599dc0b5770b7343a853455c0f743999a5b1cfe32bbb644d87c489a75ddb6",
+      "rust_stdout_sha256": "4f1599dc0b5770b7343a853455c0f743999a5b1cfe32bbb644d87c489a75ddb6"
+    },
+    {
+      "fixture": "tests/parity/str_lone_high.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "69168d6fc864d0b0866e534b90514c503f68f8c6cc156843823656e2ae679cba",
+      "rust_stdout_sha256": "69168d6fc864d0b0866e534b90514c503f68f8c6cc156843823656e2ae679cba"
+    },
+    {
+      "fixture": "tests/parity/str_lone_high_then_char.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "42d66089bcad303819ca77665b553448c12ae403fd0d4a3eec708621b552bf82",
+      "rust_stdout_sha256": "42d66089bcad303819ca77665b553448c12ae403fd0d4a3eec708621b552bf82"
+    },
+    {
+      "fixture": "tests/parity/str_lone_low.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6056c8c82183a3b478432f6a4635fb7b00d6049ef00d8499e008ccbe2b7ed70e",
+      "rust_stdout_sha256": "6056c8c82183a3b478432f6a4635fb7b00d6049ef00d8499e008ccbe2b7ed70e"
+    },
+    {
+      "fixture": "tests/parity/str_mixed_escapes_long.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "415cc556d9e928acd638dcc24b1d198a48b941d5beb4d47b09a671c6d8ecffe1",
+      "rust_stdout_sha256": "415cc556d9e928acd638dcc24b1d198a48b941d5beb4d47b09a671c6d8ecffe1"
+    },
+    {
+      "fixture": "tests/parity/str_nul_escape_then_text.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "760af0e6516c97467020c523804cd8b43e7bc940591f660971fcb2926eb29aaf",
+      "rust_stdout_sha256": "760af0e6516c97467020c523804cd8b43e7bc940591f660971fcb2926eb29aaf"
+    },
+    {
+      "fixture": "tests/parity/str_nul_inside.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "02feb42bf7f3dc2d4ffd42cf5d3111c6f90ca9976acf7afb173e05953ea3574c",
+      "rust_stdout_sha256": "02feb42bf7f3dc2d4ffd42cf5d3111c6f90ca9976acf7afb173e05953ea3574c"
+    },
+    {
+      "fixture": "tests/parity/str_quote_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "cd7ec23e02911866a2c4ec4995721e274292982ce8868e228c1b4bd48ec1f7c1",
+      "rust_stdout_sha256": "cd7ec23e02911866a2c4ec4995721e274292982ce8868e228c1b4bd48ec1f7c1"
+    },
+    {
+      "fixture": "tests/parity/str_raw_control_01.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b6d9dbed117c2934c3c7082fd4a2718631b3731b779f14ae63db4c5ccad2db14",
+      "rust_stdout_sha256": "b6d9dbed117c2934c3c7082fd4a2718631b3731b779f14ae63db4c5ccad2db14"
+    },
+    {
+      "fixture": "tests/parity/str_raw_cr.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9f6de5c0a11de11457ad7fb4faaa3fc9bfe95f793ca5d7a45a8f7be68fcc172e",
+      "rust_stdout_sha256": "9f6de5c0a11de11457ad7fb4faaa3fc9bfe95f793ca5d7a45a8f7be68fcc172e"
+    },
+    {
+      "fixture": "tests/parity/str_raw_del.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5fd3047c2ed0bdc80c6ea2385e720c4e4585e373713750e5cae6a32df84632e5",
+      "rust_stdout_sha256": "5fd3047c2ed0bdc80c6ea2385e720c4e4585e373713750e5cae6a32df84632e5"
+    },
+    {
+      "fixture": "tests/parity/str_raw_newline.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a81dfb2a22188937841595bc66b21b80731e8ec8223e2658d5ab95de138e4eb9",
+      "rust_stdout_sha256": "a81dfb2a22188937841595bc66b21b80731e8ec8223e2658d5ab95de138e4eb9"
+    },
+    {
+      "fixture": "tests/parity/str_raw_tab.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "01106c7c40a24a4b40838f2a4f569e5cc7b5572be06dd8e3acd56c829871fe87",
+      "rust_stdout_sha256": "01106c7c40a24a4b40838f2a4f569e5cc7b5572be06dd8e3acd56c829871fe87"
+    },
+    {
+      "fixture": "tests/parity/str_raw_utf8.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "072f7606f1474f0fff5c8e7766052a429c9a1afa772093ed419a6de4030e2413",
+      "rust_stdout_sha256": "072f7606f1474f0fff5c8e7766052a429c9a1afa772093ed419a6de4030e2413"
+    },
+    {
+      "fixture": "tests/parity/str_simple.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "852315bf3d04b93e0653c4499d0acde2042b3c0381f0cdb126d0a1ef0c4644bd",
+      "rust_stdout_sha256": "852315bf3d04b93e0653c4499d0acde2042b3c0381f0cdb126d0a1ef0c4644bd"
+    },
+    {
+      "fixture": "tests/parity/str_single_quoted.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e7d2e16242b9ed7ecd6fed1c2c59ce3612768d915678ed4b1fe9d490fef111ab",
+      "rust_stdout_sha256": "e7d2e16242b9ed7ecd6fed1c2c59ce3612768d915678ed4b1fe9d490fef111ab"
+    },
+    {
+      "fixture": "tests/parity/str_slash_unescaped.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8ddec65275b97cc70f3dd08662289837f583410fa622fb021ae1d7a8319690b6",
+      "rust_stdout_sha256": "8ddec65275b97cc70f3dd08662289837f583410fa622fb021ae1d7a8319690b6"
+    },
+    {
+      "fixture": "tests/parity/str_surrogate_max.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7d211bde0727e49d279d0e608c73a77e5cf241a7024e8d11205905e20c784511",
+      "rust_stdout_sha256": "7d211bde0727e49d279d0e608c73a77e5cf241a7024e8d11205905e20c784511"
+    },
+    {
+      "fixture": "tests/parity/str_surrogate_pair.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "349f7bff2f55c86116b8bab631607d386b1b7d7ad1824d76e3e64be3534546de",
+      "rust_stdout_sha256": "349f7bff2f55c86116b8bab631607d386b1b7d7ad1824d76e3e64be3534546de"
+    },
+    {
+      "fixture": "tests/parity/str_surrogate_pair_upper.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c220a1f793843deebfa7fdc2e04691372da770b676a77aa5d7af1597f5d38a6e",
+      "rust_stdout_sha256": "c220a1f793843deebfa7fdc2e04691372da770b676a77aa5d7af1597f5d38a6e"
+    },
+    {
+      "fixture": "tests/parity/str_truncated_u12.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e21cf990e637d41e75b31ced8e6cfd558288ae05817b5e8310b233a79aafbc7a",
+      "rust_stdout_sha256": "e21cf990e637d41e75b31ced8e6cfd558288ae05817b5e8310b233a79aafbc7a"
+    },
+    {
+      "fixture": "tests/parity/str_truncated_u12_eof.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "aafa35bb15b81e83f5ea432e82f65e079b9fda5a47bd45b19cbf2fbb74bb6e06",
+      "rust_stdout_sha256": "aafa35bb15b81e83f5ea432e82f65e079b9fda5a47bd45b19cbf2fbb74bb6e06"
+    },
+    {
+      "fixture": "tests/parity/str_truncated_u_eof.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9a48f04c027de14e717d0bf225c72140ce6600876be3d1c69b24deefb7114e89",
+      "rust_stdout_sha256": "9a48f04c027de14e717d0bf225c72140ce6600876be3d1c69b24deefb7114e89"
+    },
+    {
+      "fixture": "tests/parity/str_u0000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6eac61480ccf57b959043295afa266758d8f0669e9ac928ee0865aa8b667d8b5",
+      "rust_stdout_sha256": "6eac61480ccf57b959043295afa266758d8f0669e9ac928ee0865aa8b667d8b5"
+    },
+    {
+      "fixture": "tests/parity/str_u0000_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3fc7d853fcee580b018b341e73bf5ce0fab8071738f85d798b4e9c8794111e39",
+      "rust_stdout_sha256": "3fc7d853fcee580b018b341e73bf5ce0fab8071738f85d798b4e9c8794111e39"
+    },
+    {
+      "fixture": "tests/parity/str_u0001.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "fbcec2f5d1ff336cdde5b1b534c5eac1a716b33932b28407caac2c866a788b4f",
+      "rust_stdout_sha256": "fbcec2f5d1ff336cdde5b1b534c5eac1a716b33932b28407caac2c866a788b4f"
+    },
+    {
+      "fixture": "tests/parity/str_u0080.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5b5fe7ed4c11a09cb3915b984c95eb8d9e23fada886150529ebac82b4dbeead1",
+      "rust_stdout_sha256": "5b5fe7ed4c11a09cb3915b984c95eb8d9e23fada886150529ebac82b4dbeead1"
+    },
+    {
+      "fixture": "tests/parity/str_u00C9_upper.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5e33ba993a519968cd95c7a6634a3c5ca5cedfba07e39a334cc363ec3d973848",
+      "rust_stdout_sha256": "5e33ba993a519968cd95c7a6634a3c5ca5cedfba07e39a334cc363ec3d973848"
+    },
+    {
+      "fixture": "tests/parity/str_u00e9.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5d41483924aeaa9a01daa33654ff8d35da73d3f2d2966395e614ec0de9f18d1f",
+      "rust_stdout_sha256": "5d41483924aeaa9a01daa33654ff8d35da73d3f2d2966395e614ec0de9f18d1f"
+    },
+    {
+      "fixture": "tests/parity/str_u07ff.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ad534114943e19e70d113cabb418f870dfa7219c2ee6b59596125c44a6b649c2",
+      "rust_stdout_sha256": "ad534114943e19e70d113cabb418f870dfa7219c2ee6b59596125c44a6b649c2"
+    },
+    {
+      "fixture": "tests/parity/str_u0800.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "4d7b8f09db6fa942b991a740adb1dc1e6237a4563451a5a0c55087f1a6594b75",
+      "rust_stdout_sha256": "4d7b8f09db6fa942b991a740adb1dc1e6237a4563451a5a0c55087f1a6594b75"
+    },
+    {
+      "fixture": "tests/parity/str_u20ac.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "6ab82d3defb28f1de58592bd6ff8018c4fdf854e55335b2c93c40d64398ed153",
+      "rust_stdout_sha256": "6ab82d3defb28f1de58592bd6ff8018c4fdf854e55335b2c93c40d64398ed153"
+    },
+    {
+      "fixture": "tests/parity/str_ud7ff.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8c0b91b8c66ab460a5a8122994f53442745b5e3ec1c2b021ba585a71f294ecfc",
+      "rust_stdout_sha256": "8c0b91b8c66ab460a5a8122994f53442745b5e3ec1c2b021ba585a71f294ecfc"
+    },
+    {
+      "fixture": "tests/parity/str_ue000.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "a3ded30d5f0599876e2107bd92f41b6b12952b9f7e2beb0ceee99b46cf160fe5",
+      "rust_stdout_sha256": "a3ded30d5f0599876e2107bd92f41b6b12952b9f7e2beb0ceee99b46cf160fe5"
+    },
+    {
+      "fixture": "tests/parity/str_uffff.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "ba80d84f51369b17b91b41d434f8b8b97a56537b341d5e5133d2bd0ec8936ca3",
+      "rust_stdout_sha256": "ba80d84f51369b17b91b41d434f8b8b97a56537b341d5e5133d2bd0ec8936ca3"
+    },
+    {
+      "fixture": "tests/parity/str_unterminated.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "8897a5cde8734edbfd795146a6ba9714fdbfbb0f89f612100a2690ad82db6140",
+      "rust_stdout_sha256": "8897a5cde8734edbfd795146a6ba9714fdbfbb0f89f612100a2690ad82db6140"
+    },
+    {
+      "fixture": "tests/parity/str_unterminated_escape_quote.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "2d1c92a4ef3a16b57db655439e7998ca59e3b1b1b30cf54d3c1b499ecf0f2d36",
+      "rust_stdout_sha256": "2d1c92a4ef3a16b57db655439e7998ca59e3b1b1b30cf54d3c1b499ecf0f2d36"
+    },
+    {
+      "fixture": "tests/parity/str_utf8_surrogate_encoded.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "941ba291b7225c4f2b98f192b833f2948bef656a5e65e662d684f2628ea8d3f0",
+      "rust_stdout_sha256": "941ba291b7225c4f2b98f192b833f2948bef656a5e65e662d684f2628ea8d3f0"
+    },
+    {
+      "fixture": "tests/parity/trail_close_extra.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d84f116a285599751cd7d0ad4b666ad5154e76bc8a750022e69f1175948dd85e",
+      "rust_stdout_sha256": "d84f116a285599751cd7d0ad4b666ad5154e76bc8a750022e69f1175948dd85e"
+    },
+    {
+      "fixture": "tests/parity/trail_comma.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "f09c93f2303d45a4f7c50c45130a69556f80f7b73667bfdcf2e2b6b272402428",
+      "rust_stdout_sha256": "f09c93f2303d45a4f7c50c45130a69556f80f7b73667bfdcf2e2b6b272402428"
+    },
+    {
+      "fixture": "tests/parity/trail_garbage.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "66ff7cbae997f8726b2439db2c6981c9ff978e930d425b796d3d3a46d92eaea6",
+      "rust_stdout_sha256": "66ff7cbae997f8726b2439db2c6981c9ff978e930d425b796d3d3a46d92eaea6"
+    },
+    {
+      "fixture": "tests/parity/trail_newline_garbage.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7a152f6123343cf14ccfba2e1a48c8c769dbc84568472077f9c0dee9a151d82a",
+      "rust_stdout_sha256": "7a152f6123343cf14ccfba2e1a48c8c769dbc84568472077f9c0dee9a151d82a"
+    },
+    {
+      "fixture": "tests/parity/trail_nul_first.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c545308cf0cc429a151374f1b7b401ae2e7ef6ddf6db2848146fc205d61beab0",
+      "rust_stdout_sha256": "c545308cf0cc429a151374f1b7b401ae2e7ef6ddf6db2848146fc205d61beab0"
+    },
+    {
+      "fixture": "tests/parity/trail_nul_garbage.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "dbf387ef3f027616be3817fdb5c14ecad3b4d2ae23f45011028306033d900124",
+      "rust_stdout_sha256": "dbf387ef3f027616be3817fdb5c14ecad3b4d2ae23f45011028306033d900124"
+    },
+    {
+      "fixture": "tests/parity/trail_nul_immediately.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3fc41937fc90a1fffcbfa539a6b70e359f03e91c765fea2e49748c86e10b7660",
+      "rust_stdout_sha256": "3fc41937fc90a1fffcbfa539a6b70e359f03e91c765fea2e49748c86e10b7660"
+    },
+    {
+      "fixture": "tests/parity/trail_nul_ws_nul.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c2c06113c1883bacd5301024ba67ec1281933da21467c5b7f57695e3f5dcf618",
+      "rust_stdout_sha256": "c2c06113c1883bacd5301024ba67ec1281933da21467c5b7f57695e3f5dcf618"
+    },
+    {
+      "fixture": "tests/parity/trail_number_nul_garbage.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "50b6e92dcfa878166bc6da57ecc9b4d0951248d13542da0ebab5b290393a990c",
+      "rust_stdout_sha256": "50b6e92dcfa878166bc6da57ecc9b4d0951248d13542da0ebab5b290393a990c"
+    },
+    {
+      "fixture": "tests/parity/trail_second_value.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "02987f0c9ccc1ef3840cb60be13c7da1981f2fc0c61e5c2d7994a47ce25b3a25",
+      "rust_stdout_sha256": "02987f0c9ccc1ef3840cb60be13c7da1981f2fc0c61e5c2d7994a47ce25b3a25"
+    },
+    {
+      "fixture": "tests/parity/trail_second_value_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "3d032d3a21fba92c16fbf6c385b23b758c1cad0fe8be73b3cb58a21403be98fb",
+      "rust_stdout_sha256": "3d032d3a21fba92c16fbf6c385b23b758c1cad0fe8be73b3cb58a21403be98fb"
+    },
+    {
+      "fixture": "tests/parity/trail_string_nul_garbage.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "26045cea64b009cdd5cdf80b66dc03914375da848e41c82afcff4688120745ef",
+      "rust_stdout_sha256": "26045cea64b009cdd5cdf80b66dc03914375da848e41c82afcff4688120745ef"
+    },
+    {
+      "fixture": "tests/parity/trail_ws.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "1a645178985cf36055eeb9770f44a2e7293e7dfcdf8a62189ea14aac6cb588fc",
+      "rust_stdout_sha256": "1a645178985cf36055eeb9770f44a2e7293e7dfcdf8a62189ea14aac6cb588fc"
+    },
+    {
+      "fixture": "tests/parity/ws_crlf_doc.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "9848da8e3a79cdd9b22d54fee0749ca1e196822c1ef487fb6b20b824da0c20c6",
+      "rust_stdout_sha256": "9848da8e3a79cdd9b22d54fee0749ca1e196822c1ef487fb6b20b824da0c20c6"
+    },
+    {
+      "fixture": "tests/parity/ws_del.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e6140611691679b8395476bb0de6f6ea55573358d30d5356fd8badf410404c8c",
+      "rust_stdout_sha256": "e6140611691679b8395476bb0de6f6ea55573358d30d5356fd8badf410404c8c"
+    },
+    {
+      "fixture": "tests/parity/ws_empty_file.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "c68f887f825e6d8671945405761653fa0bfa4c26cb11c2f15341c3a10033a0a1",
+      "rust_stdout_sha256": "c68f887f825e6d8671945405761653fa0bfa4c26cb11c2f15341c3a10033a0a1"
+    },
+    {
+      "fixture": "tests/parity/ws_formfeed.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "d7816a819a26459afe4bddf0767e71285500187f8058c69a0776a66d6d4e8632",
+      "rust_stdout_sha256": "d7816a819a26459afe4bddf0767e71285500187f8058c69a0776a66d6d4e8632"
+    },
+    {
+      "fixture": "tests/parity/ws_leading.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "7b5d909cd4119f38079b1c907b4fac50bd7e920a599c1372eeb09d96274af88d",
+      "rust_stdout_sha256": "7b5d909cd4119f38079b1c907b4fac50bd7e920a599c1372eeb09d96274af88d"
+    },
+    {
+      "fixture": "tests/parity/ws_nbsp.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "bd0d2ed9fa4960c6fa1bb6642357ffd4749d11319bacace445713e86208a640f",
+      "rust_stdout_sha256": "bd0d2ed9fa4960c6fa1bb6642357ffd4749d11319bacace445713e86208a640f"
+    },
+    {
+      "fixture": "tests/parity/ws_only.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "e03558838e92c1c26fb3ceab556d1fc7f56c139ebedf0462a344932c0919835f",
+      "rust_stdout_sha256": "e03558838e92c1c26fb3ceab556d1fc7f56c139ebedf0462a344932c0919835f"
+    },
+    {
+      "fixture": "tests/parity/ws_only_ctrl.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "969eae2716823fd8cb2909b52020cf732924d1764c717a016c5c50947f059da0",
+      "rust_stdout_sha256": "969eae2716823fd8cb2909b52020cf732924d1764c717a016c5c50947f059da0"
+    },
+    {
+      "fixture": "tests/parity/ws_only_nul.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "b67f40b504762c6e598ad00bd9d341bc7200284ae5c653a8f851e67f74fd6991",
+      "rust_stdout_sha256": "b67f40b504762c6e598ad00bd9d341bc7200284ae5c653a8f851e67f74fd6991"
+    },
+    {
+      "fixture": "tests/parity/ws_space.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "fd9652b9202bbfcbbd2ab19caf6c0b764240f3a28b490c6baa14d5a3246cdb6d",
+      "rust_stdout_sha256": "fd9652b9202bbfcbbd2ab19caf6c0b764240f3a28b490c6baa14d5a3246cdb6d"
+    },
+    {
+      "fixture": "tests/parity/ws_vtab.json",
+      "result": "identical",
+      "c_status": "exit 0",
+      "rust_status": "exit 0",
+      "c_stdout_sha256": "5f5273ba2add6af736666f7fc33a0482d50d8373dd82605918c77987133e398e",
+      "rust_stdout_sha256": "5f5273ba2add6af736666f7fc33a0482d50d8373dd82605918c77987133e398e"
+    }
+  ],
+  "divergence_details": [],
+  "exceptions_used": [],
+  "problems": [],
+  "pins": [
+    "101 oracle files pinned",
+    "406 fixtures pinned"
+  ],
+  "not_covered": [
+    "Inputs outside the fixture globs; the gate proves parity only on the listed fixtures.",
+    "stderr output (set `compare_stderr` to include it).",
+    "Independence of the Rust driver: the gate only checks that it is not the same executable as the C driver."
+  ]
+}

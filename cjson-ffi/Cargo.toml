@@ -1,0 +1,15 @@
+[package]
+name = "cjson-ffi"
+description = "C ABI shim exposing cjson-core through the original cJSON.h."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+name = "cjson_ffi"
+path = "src/lib.rs"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[dependencies]
+cjson-core = { path = "../cjson-core" }

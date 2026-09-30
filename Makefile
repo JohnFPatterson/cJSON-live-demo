@@ -161,3 +161,97 @@ clean:
 	$(RM) $(CJSON_SHARED) $(CJSON_SHARED_VERSION) $(CJSON_SHARED_SO) $(CJSON_STATIC) #delete cJSON
 	$(RM) $(UTILS_SHARED) $(UTILS_SHARED_VERSION) $(UTILS_SHARED_SO) $(UTILS_STATIC) #delete cJSON_Utils
 	$(RM) $(CJSON_TEST)  #delete test
+
+# ---- Rust port / parity ----
+# Targets for the C-to-Rust port (cjson-core / cjson-ffi). Everything above this
+# line is the original cJSON Makefile and is unchanged. Build outputs go to
+# build/ (gitignored) and target/ (cargo). See tools/DRIVER_FORMAT.md and
+# parity.sh.
+.PHONY: oracle rust-driver ffi-lib oracle-ffi c-unity ffi-unity legacy-diff hook-trace parity
+
+PARITY_BUILD = build
+# Pinned so the binaries land where .cursor/parity.json and parity.sh look for
+# them, even when the environment sets CARGO_TARGET_DIR elsewhere.
+CARGO_TARGET = target
+FFI_LIB = $(CARGO_TARGET)/release/libcjson_ffi.a
+# System libraries a Rust staticlib needs when linked into a C program.
+ifeq (Darwin, $(uname))
+FFI_LDLIBS = -lm
+else
+FFI_LDLIBS = -lm -lpthread -ldl
+endif
+# The non-Utils suites listed in tests/CMakeLists.txt (unity_tests), same order.
+C_UNITY_SUITES = parse_examples parse_number parse_hex4 parse_string parse_array \
+	parse_object parse_value print_string print_number print_array print_object \
+	print_value misc_tests parse_with_opts compare_tests cjson_add \
+	readme_examples minify_tests
+
+oracle: $(PARITY_BUILD)/oracle
+
+# Oracle binaries are linked to a temporary name and renamed into place: on
+# macOS, overwriting a binary that another process is running gets that
+# process killed (SIGKILL), and parity runs may overlap with rebuilds.
+$(PARITY_BUILD)/oracle: tools/cjson-oracle.c cJSON.c cJSON.h
+	@mkdir -p $(PARITY_BUILD)
+	$(CC) $(R_CFLAGS) -I. tools/cjson-oracle.c cJSON.c -o $@.tmp $(LDLIBS)
+	mv -f $@.tmp $@
+
+rust-driver:
+	cargo build --release --target-dir $(CARGO_TARGET) -p rust-driver
+
+ffi-lib:
+	cargo build --release --target-dir $(CARGO_TARGET) -p cjson-ffi
+
+oracle-ffi: ffi-lib
+	@mkdir -p $(PARITY_BUILD)
+	$(CC) $(R_CFLAGS) -I. tools/cjson-oracle.c $(FFI_LIB) -o $(PARITY_BUILD)/oracle-ffi.tmp $(FFI_LDLIBS)
+	mv -f $(PARITY_BUILD)/oracle-ffi.tmp $(PARITY_BUILD)/oracle-ffi
+
+# Original Unity suites against the original C. Each tests/X.c includes
+# ../cJSON.c through tests/common.h. Unity itself is built without -Werror, as
+# tests/CMakeLists.txt does. Suites run from $(PARITY_BUILD)/c-unity so that
+# relative paths such as inputs/test1 resolve (tests/parse_examples.c:61).
+c-unity:
+	@mkdir -p $(PARITY_BUILD)/c-unity/inputs
+	cp tests/inputs/* $(PARITY_BUILD)/c-unity/inputs/
+	$(CC) -c tests/unity/src/unity.c -o $(PARITY_BUILD)/c-unity/unity.o
+	@set -e; for t in $(C_UNITY_SUITES); do \
+		echo "$(CC) $(R_CFLAGS) -Itests/unity/src tests/$$t.c $(PARITY_BUILD)/c-unity/unity.o -o $(PARITY_BUILD)/c-unity/$$t $(LDLIBS)"; \
+		$(CC) $(R_CFLAGS) -Itests/unity/src tests/$$t.c $(PARITY_BUILD)/c-unity/unity.o -o $(PARITY_BUILD)/c-unity/$$t $(LDLIBS); \
+	done
+	@failed=""; for t in $(C_UNITY_SUITES); do \
+		echo "== c-unity: $$t"; \
+		if ! (cd $(PARITY_BUILD)/c-unity && ./$$t > $$t.log 2>&1); then failed="$$failed $$t"; fi; \
+		tail -n 3 $(PARITY_BUILD)/c-unity/$$t.log; \
+	done; \
+	if [ -n "$$failed" ]; then echo "c-unity FAILED:$$failed"; exit 1; fi; \
+	echo "c-unity: all $(words $(C_UNITY_SUITES)) suites passed"
+
+# Public-API Unity suites against the Rust library (see tools/ffi-unity/run.sh
+# for the cases it removes and why).
+ffi-unity: ffi-lib
+	CC="$(CC)" CFLAGS="$(R_CFLAGS)" FFI_LIB="$(FFI_LIB)" FFI_LDLIBS="$(FFI_LDLIBS)" sh tools/ffi-unity/run.sh
+
+# The original test.c driver linked against cJSON.c and against the Rust
+# library; stdout must be identical.
+legacy-diff: ffi-lib
+	@mkdir -p $(PARITY_BUILD)/legacy
+	$(CC) $(R_CFLAGS) -I. test.c cJSON.c -o $(PARITY_BUILD)/legacy/test-c $(LDLIBS)
+	$(CC) $(R_CFLAGS) -I. test.c $(FFI_LIB) -o $(PARITY_BUILD)/legacy/test-ffi $(FFI_LDLIBS)
+	$(PARITY_BUILD)/legacy/test-c > $(PARITY_BUILD)/legacy/test-c.out
+	$(PARITY_BUILD)/legacy/test-ffi > $(PARITY_BUILD)/legacy/test-ffi.out
+	diff $(PARITY_BUILD)/legacy/test-c.out $(PARITY_BUILD)/legacy/test-ffi.out
+	@echo "legacy-diff: test.c output identical ($$(wc -c < $(PARITY_BUILD)/legacy/test-c.out | tr -d ' ') bytes)"
+
+# Allocator-hook call sequences, cJSON.c vs the Rust library. Exits nonzero
+# while the differences recorded in MIGRATION.md (CH-1 to CH-3) remain.
+hook-trace: ffi-lib
+	@mkdir -p $(PARITY_BUILD)/hook-trace
+	$(CC) $(R_CFLAGS) -I. tools/hook-trace.c cJSON.c -o $(PARITY_BUILD)/hook-trace/c $(LDLIBS)
+	$(CC) $(R_CFLAGS) -I. tools/hook-trace.c $(FFI_LIB) -o $(PARITY_BUILD)/hook-trace/ffi $(FFI_LDLIBS)
+	$(PARITY_BUILD)/hook-trace/c > $(PARITY_BUILD)/hook-trace/c.out
+	$(PARITY_BUILD)/hook-trace/ffi > $(PARITY_BUILD)/hook-trace/ffi.out
+	diff $(PARITY_BUILD)/hook-trace/c.out $(PARITY_BUILD)/hook-trace/ffi.out
+
+parity:
+	./parity.sh
