@@ -1,0 +1,15 @@
+[package]
+name = "rust-driver"
+description = "Parity driver: runs cjson-core over one fixture and prints the same report as tools/cjson-oracle.c."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+
+[[bin]]
+name = "rust-driver"
+path = "src/main.rs"
+
+[dependencies]
+cjson-core = { path = "../../cjson-core" }

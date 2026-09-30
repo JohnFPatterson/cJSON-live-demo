@@ -1,0 +1,11 @@
+[package]
+name = "cjson-core"
+description = "Safe Rust port of cJSON 1.7.19: parser, printer and tree operations with C-identical behavior."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+name = "cjson_core"
+path = "src/lib.rs"
